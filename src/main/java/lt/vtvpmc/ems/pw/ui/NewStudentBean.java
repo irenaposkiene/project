@@ -13,30 +13,30 @@ public class NewStudentBean {
     private String studentFirstName;
     private String studentLastName;
     private String studentAdress;
-    private String studentLocation;
+   /*private String studentLocation;*/
     private String studentBirthday;
     private String studentPhone;
     private String studentEmail;
-    private String studentEducation;
+   /* private String studentEducation;
     private String studentSchool;
-    private String studentSchoolEndDate;
+    private String studentSchoolEndDate;*/
     private String studentFamilyState;
 
     @Transactional
     public String save() {
-        Student student = new Student(studentFirstName, studentLastName, studentAdress, studentBirthday, studentEmail, studentPhone, studentEducation, studentSchool, studentSchoolEndDate, studentFamilyState, studentLocation );
+        Student student = new Student(studentFirstName, studentLastName, studentAdress, studentBirthday, studentEmail,  studentPhone, /*, studentEducation, studentSchool, studentSchoolEndDate, */studentFamilyState/*, studentLocation*/ );
         entityManager.persist(student);
         return "main";
     }
     
-    public String getStudentLocation() {
+   /* public String getStudentLocation() {
 		return studentLocation;
 	}
 
 	public void setStudentLocation(String studentLocation) {
 		this.studentLocation = studentLocation;
 	}
-
+*/
 	public String getStudentBirthday() {
 		return studentBirthday;
 	}
@@ -52,7 +52,7 @@ public class NewStudentBean {
 	public void setStudentPhone(String studentPhone) {
 		this.studentPhone = studentPhone;
 	}
-
+	
 	public String getStudentEmail() {
 		return studentEmail;
 	}
@@ -60,7 +60,7 @@ public class NewStudentBean {
 	public void setStudentEmail(String studentEmail) {
 		this.studentEmail = studentEmail;
 	}
-
+/*
 	public String getStudentEducation() {
 		return studentEducation;
 	}
@@ -83,7 +83,7 @@ public class NewStudentBean {
 
 	public void setStudentSchoolEndDate(String studentSchoolEndDate) {
 		this.studentSchoolEndDate = studentSchoolEndDate;
-	}
+	}*/
 
 	public String getStudentFamilyState() {
 		return studentFamilyState;

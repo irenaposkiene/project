@@ -26,36 +26,36 @@ public class Student implements Serializable {
     private String birthday;
     private String phone;
     private String email;
-    private String education;
-	private String location;
-    private String school;
-    private String schoolEndDate;
+  /* private String education;*/
+	/*private String location;*/
+ /*   private String school;
+    private String schoolEndDate;*/
     private String familyState;
     
     
-    public Student(String firstName, String lastName, String adress, String birthday,String phone, String email,String education, String school, String schoolEndDate, String familyState, String location ) {
+    public Student(String firstName, String lastName, String adress, String birthday,String phone, String email, /*String education, String school,*/ /*String schoolEndDate, */String familyState/*, String location */) {
         this.firstName = firstName;
         this.lastName = lastName;
-       
+     /*   this.location=location;*/
         this.adress = adress;
-        this.birthday = birthday;
-        this.education =education;
+       this.birthday = birthday;
+      /*  this.education =education;*/
         this.email=email;
         this.familyState = familyState;
         this.phone = phone;
-        this.school= school;
-        this.schoolEndDate =schoolEndDate;
+ /*     this.school= school;*/
+    /*    this.schoolEndDate =schoolEndDate;*/
       
     }
 
-    public String getLocation() {
+   /* public String getLocation() {
 		return location;
 	}
 
 	public void setLocation(String location) {
 		this.location = location;
 	}
-
+*/
 	public String getBirthday() {
 		return birthday;
 	}
@@ -79,7 +79,7 @@ public class Student implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+/*
 	public String getEducation() {
 		return education;
 	}
@@ -94,15 +94,15 @@ public class Student implements Serializable {
 
 	public void setSchool(String school) {
 		this.school = school;
-	}
+	}*/
 
-	public String getSchoolEndDate() {
+/*	public String getSchoolEndDate() {
 		return schoolEndDate;
 	}
 
 	public void setSchoolEndDate(String schoolEndDate) {
 		this.schoolEndDate = schoolEndDate;
-	}
+	}*/
 
 	public String getFamilyState() {
 		return familyState;

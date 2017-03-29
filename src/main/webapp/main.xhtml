@@ -26,6 +26,13 @@
                     </f:facet>
                     <h:outputText value="#{student.lastName}"/>
                 </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Birthday
+                    </f:facet>
+                    <h:outputText value="#{student.birthday}"/>
+                </h:column>
                
                 <h:column>
                     <f:facet name="header">
@@ -34,21 +41,16 @@
                     <h:outputText value="#{student.adress}"/>
                 </h:column>
                 
-                <h:column>
-                    <f:facet name="header">
-                        Location
-                    </f:facet>
-                    <h:outputText value="#{student.location}"/>
-                </h:column>
-                
+                        
                 <h:column>
                     <f:facet name="header">
                         Phone
                     </f:facet>
                     <h:outputText value="#{student.phone}"/>
                 </h:column>
+                
                 <h:column>
-                    <f:facet name="header">
+                <f:facet name="header">
                        Email
                     </f:facet>
                     <h:outputText value="#{student.email}"/>
@@ -59,26 +61,8 @@
                     </f:facet>
                     <h:outputText value="#{student.familyState}"/>
                 </h:column>
-                <h:column>
-                    <f:facet name="header">
-                        Education
-                    </f:facet>
-                    <h:outputText value="#{student.education}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">
-                        School
-                    </f:facet>
-                    <h:outputText value="#{student.school}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">
-                        SchoolEndDate
-                    </f:facet>
-                    <h:outputText value="#{student.schoolEndDate}"/>
-                </h:column>
+           
                 
-                             
                 <h:column>
                     <f:facet name="header">
                         Actions

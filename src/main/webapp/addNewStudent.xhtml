@@ -14,58 +14,56 @@
              <table>
                <tr>
                <td><h:outputText value="Name:"/></td>
-               <td> <h:inputText id="clientName" value="#{newStudentBean.studentFirstName}" required="true"/></td>
-               <h:message for="clientName"/>
+               <td> <h:inputText id="clientName" value="#{newStudentBean.studentFirstName}"  required="true"/>
+                <h:message for="clientName"/> </td>
+               
+              
+             
                </tr>  
                <tr>
                <td> <h:outputText value="Surname:"/></td>
-               <td><h:inputText id="clientSurname" value="#{newStudentBean.studentLastName}" required="true"/></td>
-                <h:message for="clientSurname"/>
+               <td><h:inputText id="clientSurname" value="#{newStudentBean.studentLastName}"  required="true"/>
+                <h:message for="clientSurname"/> </td>
+              
+                
+				</tr>
+				<tr>
+               <td> <h:outputText value="Birthday:"/></td>
+               <td><h:inputText id="clientBirthday" value="#{newStudentBean.studentBirthday}" required="true"/>
+                <h:message for="clientBirthday"/> </td>
 				</tr>
 				 <tr>
 				<td><h:outputText value="Adress:"/></td>
-                <td><h:inputText id="clientAdress" value="#{newStudentBean.studentAdress}" /></td>
-                <h:message for="clientAdress"/>
+                <td><h:inputText id="clientAdress" value="#{newStudentBean.studentAdress}" required="true"/>
+                <h:message for="clientAdress"/> </td>
 				</tr>
-				
-				 <tr>
-				<td><h:outputText value="Location:"/></td>
-                <td><h:inputText id="clientLocation" value="#{newStudentBean.studentLocation}" /></td>
-                </tr>
-				
-				 <tr>
+			
+			
+			 <tr>
 				<td><h:outputText value="Phone:"/></td>
-                <td><h:inputText id="clientPhone" value="#{newStudentBean.studentPhone}" /></td>
-              
+                <td><h:inputText id="clientPhone" value="#{newStudentBean.studentPhone}" required="true"/>
+                <h:message for="clientPhone"/> </td>
 				</tr>
+				
 				 <tr>
 				<td><h:outputText value="Email:"/></td>
-                <td><h:inputText id="clientEmail" value="#{newStudentBean.studentEmail}" /></td>
+                <td><h:inputText id="clientEmail" value="#{newStudentBean.studentEmail}"  required="true"/>
+                <h:message for="clientEmail"/> </td>
+               
              
 				</tr>
 				 <tr>
 				<td><h:outputText value="FamilyState:"/></td>
-                <td><h:inputText id="clientFamilyState" value="#{newStudentBean.studentFamilyState}" /></td>
+                <td><h:inputText id="clientFamilyState" value="#{newStudentBean.studentFamilyState}"  required="true"/>
+                <h:message for="clientFamilyState"/> </td>
                 
 				</tr>
-				 <tr>
-				<td><h:outputText value="Education:"/></td>
-                <td><h:inputText id="clientEducation" value="#{newStudentBean.studentEducation}" /></td>
-               
-				</tr>
-				 <tr>
-				<td><h:outputText value="School:"/></td>
-                <td><h:inputText id="clientSchool" value="#{newStudentBean.studentSchool}" /></td>
-              
-				</tr>
-				 <tr>
-				<td><h:outputText value="SchoolEndDate:"/></td>
-                <td><h:inputText id="clientSchoolEndDate" value="#{newStudentBean.studentSchoolEndDate}" /></td>
-            
-				</tr>
+				
+				
+							
 				</table>
 				
-           
+				
             <h:commandButton action="#{newStudentBean.save()}" value="Add"/>
         </h:form>
     </h:body>
