@@ -41,6 +41,12 @@
                     <h:outputText value="#{student.adress}"/>
                 </h:column>
                 
+                 <h:column>
+                    <f:facet name="header">
+                        Location
+                    </f:facet>
+                    <h:outputText value="#{student.location}"/>
+                </h:column>
                         
                 <h:column>
                     <f:facet name="header">
@@ -68,7 +74,19 @@
                         Actions
                     </f:facet>
                     <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Delete"/>
+                    
+                    
                 </h:column>
+                  <h:column>
+                    <f:facet name="header">
+                        Education
+                    </f:facet>
+                   <h:form id="educationForm">
+            <h:commandButton id="addStudentEducationBtn" action="addStudentEducation" value="Add Student Education"/>
+        </h:form>
+                    
+                </h:column>
+                
             </h:dataTable>
         </h:form>
 
@@ -76,5 +94,6 @@
             <h:commandButton id="addNewStudentBtn" action="addNewStudent" value="Add New Student"/>
         </h:form>
 
+ 
     </h:body>
 </html>

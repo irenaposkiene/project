@@ -38,8 +38,13 @@
                 <h:message for="clientAdress"/> </td>
 				</tr>
 			
-			
-			 <tr>
+			    <tr>
+				<td><h:outputText value="Location:"/></td>
+                <td><h:inputText id="clientLocation" value="#{newStudentBean.studentLocation}" required="true"/>
+                <h:message for="clientLocation"/> </td>
+				</tr>
+				
+			    <tr>
 				<td><h:outputText value="Phone:"/></td>
                 <td><h:inputText id="clientPhone" value="#{newStudentBean.studentPhone}" required="true"/>
                 <h:message for="clientPhone"/> </td>
