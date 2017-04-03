@@ -29,7 +29,11 @@ public class NewStudentBean {
         return "main";
     }
     
+<<<<<<< HEAD
     public String  getStudentLocation() {
+=======
+    public String getStudentLocation() {
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
 		return studentLocation;
 	}
 

@@ -18,6 +18,7 @@ public class NewEducationBean {
   	private String educationSchool;
     private String educationSchoolEndDate;
     
+<<<<<<< HEAD
     /*private String educationSpecialization;
     private String educationInstitution;
     private String educationInstitutionType;
@@ -28,6 +29,18 @@ public class NewEducationBean {
         Education education = new Education (educationEducation, educationSchool, educationSchoolEndDate /*, educationSpecialization, educationInstitution, educationInstitutionType, educationInstitutionEndDate*/);
        entityManager.persist(education);
         return "education";
+=======
+    private String educationSpecialization;
+    private String educationInstitution;
+    private String educationInstitutionType;
+    private String educationInstitutionEndDate;
+
+    @Transactional
+    public String save() {
+        Education education = new Education (educationEducation, educationSchool, educationSchoolEndDate, educationSpecialization, educationInstitution, educationInstitutionType, educationInstitutionEndDate);
+       entityManager.persist(education);
+        return "main";
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
     }
 
 	public EntityManager getEntityManager() {
@@ -61,7 +74,11 @@ public class NewEducationBean {
 	public void setEducationSchoolEndDate(String educationSchoolEndDate) {
 		this.educationSchoolEndDate = educationSchoolEndDate;
 	}
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
 	public String getEducationSpecialization() {
 		return educationSpecialization;
 	}
@@ -93,6 +110,10 @@ public class NewEducationBean {
 	public void setEducationInstitutionEndDate(String educationInstitutionEndDate) {
 		this.educationInstitutionEndDate = educationInstitutionEndDate;
 	}
+<<<<<<< HEAD
     */
+=======
+    
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
 
 }

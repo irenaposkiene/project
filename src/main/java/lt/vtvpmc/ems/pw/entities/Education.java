@@ -23,6 +23,7 @@ public class Education implements Serializable {
   	private String school;
     private String schoolEndDate;
     
+<<<<<<< HEAD
    /* private String specialization;
     private String institution;
     private String institutionType;
@@ -45,6 +46,28 @@ public class Education implements Serializable {
       
     }
     
+=======
+    private String specialization;
+    private String institution;
+    private String institutionType;
+    private String institutionEndDate;
+    
+
+  /*  public Education (String education, String school, String schoolEndDate) {
+        this.education = education;
+        this.school = school;
+        this.schoolEndDate=schoolEndDate;
+      
+      
+    }*/
+
+    public Education (String education, String school, String schoolEndDate, String specialization, String institution, String institutionType,String institutionEndDate ) {
+        this.education = education;
+        this.school = school;
+        this.schoolEndDate=schoolEndDate;
+      
+    }
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
 
 	public String getEducation() {
 		return education;
@@ -69,7 +92,11 @@ public class Education implements Serializable {
 	public void setSchoolEndDate(String schoolEndDate) {
 		this.schoolEndDate = schoolEndDate;
 	}
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
 	public String getSpecialization() {
 		return specialization;
 	}
@@ -101,7 +128,10 @@ public class Education implements Serializable {
 	public void setInstitutionEndDate(String institutionEndDate) {
 		this.institutionEndDate = institutionEndDate;
 	}
+<<<<<<< HEAD
 	*/
+=======
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
 
 	public Long getId() {
 		return id;

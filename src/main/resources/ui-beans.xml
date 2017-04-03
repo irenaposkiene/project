@@ -20,11 +20,14 @@
     <bean id="educationListBean" class="lt.vtvpmc.ems.pw.ui.EducationListBean" scope="request"/>
     
     
+<<<<<<< HEAD
     <bean id="newApplicationBean" class="lt.vtvpmc.ems.pw.ui.NewApplicationBean" scope="request"/>
     
     <bean id="applicationListBean" class="lt.vtvpmc.ems.pw.ui.ApplicationListBean" scope="request"/>
     
     
+=======
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
 </beans>
 
 
