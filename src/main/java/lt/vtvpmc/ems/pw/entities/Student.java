@@ -27,16 +27,17 @@ public class Student implements Serializable {
     private String phone;
     private String email;
   /* private String education;*/
-	/*private String location;*/
+	private String  location;
+	
  /*   private String school;
     private String schoolEndDate;*/
     private String familyState;
     
     
-    public Student(String firstName, String lastName, String adress, String birthday,String phone, String email, /*String education, String school,*/ /*String schoolEndDate, */String familyState/*, String location */) {
+    public Student(String firstName, String lastName, String adress, String birthday,String phone, String email, /*String education, String school,*/ /*String schoolEndDate, */String familyState, String location ) {
         this.firstName = firstName;
         this.lastName = lastName;
-     /*   this.location=location;*/
+        this.location=location;
         this.adress = adress;
        this.birthday = birthday;
       /*  this.education =education;*/
@@ -44,18 +45,18 @@ public class Student implements Serializable {
         this.familyState = familyState;
         this.phone = phone;
  /*     this.school= school;*/
-    /*    this.schoolEndDate =schoolEndDate;*/
+    /*  this.schoolEndDate =schoolEndDate;*/
       
     }
 
-   /* public String getLocation() {
+   public String getLocation() {
 		return location;
 	}
 
-	public void setLocation(String location) {
+	public void setLocation(String  location) {
 		this.location = location;
 	}
-*/
+
 	public String getBirthday() {
 		return birthday;
 	}

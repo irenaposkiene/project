@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+    <h:head>
+        <title>Education</title>
+        <h:outputStylesheet name="styles.css"/>
+    </h:head>
+
+    <h:body>
+    <h3> Informacija apie išsilavinimą </h3>
+        <h:form id="tableActionForm">
+            <h:dataTable value="#{educationListBean.educationList}" var="education">
+            
+        
+               <h:column>
+                    <f:facet name="header">
+                        Education
+                    </f:facet>
+                    <h:outputText value="#{education.education}"/>
+                </h:column>
+               
+                <h:column>
+                    <f:facet name="header">
+                       Education School
+                    </f:facet>
+                    <h:outputText value="#{education.school}"/>
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Education School EndDate
+                    </f:facet>
+                    <h:outputText value="#{education.schoolEndDate}"/>
+                </h:column>
+               
+                 
+                 <h:column>
+                    <f:facet name="header">
+                       Education Specialization
+                    </f:facet>
+                    <h:outputText value="#{education.specialization}"/>
+                </h:column>
+               
+               
+                 <h:column>
+                    <f:facet name="header">
+                        Education Institution
+                    </f:facet>
+                    <h:outputText value="#{education.institution}"/>
+                </h:column>
+               
+               
+                 <h:column>
+                    <f:facet name="header">
+                       Education Institution Type
+                    </f:facet>
+                    <h:outputText value="#{education.institutionType}"/>
+                </h:column>
+               
+               
+                 <h:column>
+                    <f:facet name="header">
+                      Education Institution EndDate
+                    </f:facet>
+                    <h:outputText value="#{education.institutionEndDate}"/>
+                </h:column>
+                    	   
+                      	   
+                      	   
+                              
+                <h:column>
+                    <f:facet name="header">
+                        Actions
+                    </f:facet>
+                    <h:commandLink actionListener="#{educationListBean.removeEducation(education)}" value="Delete"/>
+                    
+                    
+                </h:column>
+               
+                
+                            
+            </h:dataTable>
+        </h:form>
+
+        
+ 
+    </h:body>
+</html>

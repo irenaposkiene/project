@@ -14,6 +14,17 @@
     
     <bean id="studentListBean" class="lt.vtvpmc.ems.pw.ui.StudentListBean" scope="request"/>
     
+    
+    <bean id="newEducationBean" class="lt.vtvpmc.ems.pw.ui.NewEducationBean" scope="request"/>
+    
+    <bean id="educationListBean" class="lt.vtvpmc.ems.pw.ui.EducationListBean" scope="request"/>
+    
+    
+    <bean id="newApplicationBean" class="lt.vtvpmc.ems.pw.ui.NewApplicationBean" scope="request"/>
+    
+    <bean id="applicationListBean" class="lt.vtvpmc.ems.pw.ui.ApplicationListBean" scope="request"/>
+    
+    
 </beans>
 
 

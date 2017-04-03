@@ -13,7 +13,7 @@ public class NewStudentBean {
     private String studentFirstName;
     private String studentLastName;
     private String studentAdress;
-   /*private String studentLocation;*/
+   private String studentLocation;
     private String studentBirthday;
     private String studentPhone;
     private String studentEmail;
@@ -24,19 +24,19 @@ public class NewStudentBean {
 
     @Transactional
     public String save() {
-        Student student = new Student(studentFirstName, studentLastName, studentAdress, studentBirthday, studentEmail,  studentPhone, /*, studentEducation, studentSchool, studentSchoolEndDate, */studentFamilyState/*, studentLocation*/ );
+        Student student = new Student(studentFirstName, studentLastName, studentAdress, studentBirthday, studentEmail,  studentPhone, /*, studentEducation, studentSchool, studentSchoolEndDate, */studentFamilyState, studentLocation );
         entityManager.persist(student);
         return "main";
     }
     
-   /* public String getStudentLocation() {
+    public String  getStudentLocation() {
 		return studentLocation;
 	}
 
-	public void setStudentLocation(String studentLocation) {
+	public void setStudentLocation(String  studentLocation) {
 		this.studentLocation = studentLocation;
 	}
-*/
+
 	public String getStudentBirthday() {
 		return studentBirthday;
 	}

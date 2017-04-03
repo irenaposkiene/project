@@ -9,6 +9,7 @@
     </h:head>
 
     <h:body>
+    <h3> Moksleivių priėmimo registracijos sistema</h3>
         <h:form id="tableActionForm">
             <h:dataTable value="#{studentListBean.studentList}" var="student">
             
@@ -41,7 +42,15 @@
                     <h:outputText value="#{student.adress}"/>
                 </h:column>
                 
-                        
+                 <h:column>
+                  
+                    <f:facet name="header">
+                        Location
+                    </f:facet>
+                    <h:outputText value="#{student.location}"/>
+                </h:column>
+             
+                                             
                 <h:column>
                     <f:facet name="header">
                         Phone
@@ -57,18 +66,37 @@
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        FamilyState
-                    </f:facet>
+                        Family State
+                   </f:facet>
                     <h:outputText value="#{student.familyState}"/>
-                </h:column>
-           
-                
+                </h:column>			
+           	    
+                        
                 <h:column>
                     <f:facet name="header">
                         Actions
                     </f:facet>
                     <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Delete"/>
+                    
+                    <h:commandButton action="#{newApplicationBean.save()}" value="Application Info"/>
+       
+                    
+                      </h:column>
+                
+                
+                  <h:column>
+                    <f:facet name="header">
+                        Education
+                    </f:facet>
+                    
+                   <h:form id="educationForm">
+           			 <h:commandButton id="addStudentEducationBtn" action="addStudentEducation" value="Add Student Education"/>
+      			  </h:form>
+                    
                 </h:column>
+                
+              
+                
             </h:dataTable>
         </h:form>
 
@@ -76,5 +104,6 @@
             <h:commandButton id="addNewStudentBtn" action="addNewStudent" value="Add New Student"/>
         </h:form>
 
+ 
     </h:body>
 </html>

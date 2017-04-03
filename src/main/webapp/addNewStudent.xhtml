@@ -3,12 +3,12 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core">
     <h:head>
-        <title>Add New Student</title>
+        <title>Moksleivio informacija</title>
     </h:head>
     
     <h:body>
         <h:form id="newCustomerForm">
-            <h3>Add New Student</h3>
+            <h3>Moksleivio informacija</h3>
            
          
              <table>
@@ -38,8 +38,14 @@
                 <h:message for="clientAdress"/> </td>
 				</tr>
 			
-			
-			 <tr>
+			    <tr>
+				<td><h:outputText value="Location:"/></td>
+                <td><h:inputText id="clientLocation" value="#{newStudentBean.studentLocation}" required="true"/>
+                <h:message for="clientLocation"/> </td>
+				
+				</tr>
+						
+			    <tr>
 				<td><h:outputText value="Phone:"/></td>
                 <td><h:inputText id="clientPhone" value="#{newStudentBean.studentPhone}" required="true"/>
                 <h:message for="clientPhone"/> </td>
@@ -49,18 +55,18 @@
 				<td><h:outputText value="Email:"/></td>
                 <td><h:inputText id="clientEmail" value="#{newStudentBean.studentEmail}"  required="true"/>
                 <h:message for="clientEmail"/> </td>
-               
-             
+                    
 				</tr>
-				 <tr>
-				<td><h:outputText value="FamilyState:"/></td>
+				
+				
+				
+               <tr>
+				<td><h:outputText value="Family State:"/></td>
                 <td><h:inputText id="clientFamilyState" value="#{newStudentBean.studentFamilyState}"  required="true"/>
                 <h:message for="clientFamilyState"/> </td>
-                
+                    
 				</tr>
-				
-				
-							
+               				
 				</table>
 				
 				
