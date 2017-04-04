@@ -27,8 +27,22 @@ public class Student implements Serializable {
     private String phone;
     private String email;
   /* private String education;*/
+<<<<<<< HEAD
 	private String  location;
 	
+=======
+<<<<<<< HEAD
+	private String  location;
+	
+=======
+<<<<<<< HEAD
+	private String  location;
+	
+=======
+	private String location;
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
  /*   private String school;
     private String schoolEndDate;*/
     private String familyState;
