@@ -18,18 +18,30 @@
     <bean id="newEducationBean" class="lt.vtvpmc.ems.pw.ui.NewEducationBean" scope="request"/>
     
     <bean id="educationListBean" class="lt.vtvpmc.ems.pw.ui.EducationListBean" scope="request"/>
+<<<<<<< HEAD
      
     
     
+=======
+    
+    
+<<<<<<< HEAD
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
     <bean id="newApplicationBean" class="lt.vtvpmc.ems.pw.ui.NewApplicationBean" scope="request"/>
     
     <bean id="applicationListBean" class="lt.vtvpmc.ems.pw.ui.ApplicationListBean" scope="request"/>
     
+<<<<<<< HEAD
      
     <bean id="newFamilyBean" class="lt.vtvpmc.ems.pw.ui.NewFamilyBean" scope="request"/>
     
     <bean id="familyListBean" class="lt.vtvpmc.ems.pw.ui.FamilyListBean" scope="request"/>
     
+=======
+    
+=======
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
 </beans>
 
 
