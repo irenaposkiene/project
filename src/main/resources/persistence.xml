@@ -6,7 +6,11 @@
              version="1.0">
     <persistence-unit name="persistence-unit">
         <class>lt.vtvpmc.ems.pw.entities.Student</class>
-        <properties>
+        <class>lt.vtvpmc.ems.pw.entities.Education</class>
+        <class>lt.vtvpmc.ems.pw.entities.Family</class>
+        <class>lt.vtvpmc.ems.pw.entities.Application</class>
+        <class>lt.vtvpmc.ems.pw.entities.Additional</class>
+          <properties>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>

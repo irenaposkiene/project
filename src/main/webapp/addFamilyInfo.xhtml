@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Family Info</title>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerEducationForm">
+            <h3>Add Information about Family</h3>
+    
+         
+             <table>
+               <tr>
+               <td><h:outputText value="Father Name:"/></td>
+               <td> <h:inputText id="clientFatherName" value="#{newFamilyBean.familyFatherName}"  required="true"/>
+                <h:message for="clientFatherName"/> </td>
+                </tr> 
+              
+             
+               <tr>
+               <td><h:outputText value="Father Surname:"/></td>
+               <td> <h:inputText id="clientFatherSurname" value="#{newFamilyBean.familyFatherSurname}"  required="true"/>
+                <h:message for="clientFatherSurname"/> </td>
+               </tr> 
+               	
+				<tr>
+               <td><h:outputText value="Father Adress:"/></td>
+               <td> <h:inputText id="clientFatherAdress" value="#{newFamilyBean.familyFatherAdress}"  required="true"/>
+                <h:message for="clientFatherAdress"/> </td>
+                </tr> 
+                
+               <tr>
+               <td><h:outputText value="Father Phone:"/></td>
+               <td> <h:inputText id="clientFatherPhone" value="#{newFamilyBean.familyFatherPhone}"  required="true"/>
+                <h:message for="clientFatherPhone"/> </td>
+              </tr>  
+                
+	
+				 <tr>
+               <td><h:outputText value="Mother Name:"/></td>
+               <td> <h:inputText id="clientMotherName" value="#{newFamilyBean.familyMotherName}"  required="true"/>
+                <h:message for="clientMotherName"/> </td>
+                </tr> 
+              
+             
+               <tr>
+               <td><h:outputText value="Mother Surname:"/></td>
+               <td> <h:inputText id="clientMotherSurname" value="#{newFamilyBean.familyMotherSurname}"  required="true"/>
+                <h:message for="clientMotherSurname"/> </td>
+               </tr> 
+               	
+				<tr>
+               <td><h:outputText value="Mother Adress:"/></td>
+               <td> <h:inputText id="clientMotherAdress" value="#{newFamilyBean.familyMotherAdress}"  required="true"/>
+                <h:message for="clientMotherAdress"/> </td>
+                </tr> 
+                
+               <tr>
+               <td><h:outputText value="Mother Phone:"/></td>
+               <td> <h:inputText id="clientMotherPhone" value="#{newFamilyBean.familyMotherPhone}"  required="true"/>
+                <h:message for="clientMotherPhone"/> </td>
+              </tr>  
+              
+              
+               <tr>
+               <td><h:outputText value="Patron Name:"/></td>
+               <td> <h:inputText id="clientPatronName" value="#{newFamilyBean.familyPatronName}"  required="true"/>
+                <h:message for="clientPatronName"/> </td>
+                </tr> 
+              
+             
+               <tr>
+               <td><h:outputText value="Patron Surname:"/></td>
+               <td> <h:inputText id="clientPatronSurname" value="#{newFamilyBean.familyPatronSurname}"  required="true"/>
+                <h:message for="clientPatronSurname"/> </td>
+               </tr> 
+               	
+				<tr>
+               <td><h:outputText value="Patron Adress:"/></td>
+               <td> <h:inputText id="clientPatronAdress" value="#{newFamilyBean.familyPatronAdress}"  required="true"/>
+                <h:message for="clientPatronAdress"/> </td>
+                </tr> 
+                
+               <tr>
+               <td><h:outputText value="Patron Phone:"/></td>
+               <td> <h:inputText id="clientPatronPhone" value="#{newFamilyBean.familyPatronPhone}"  required="true"/>
+                <h:message for="clientPatronPhone"/> </td>
+              </tr>  
+              		       
+    
+              
+			</table>
+				
+				
+            <h:commandButton action="#{newFamilyBean.save()}" value="Add"/>
+        </h:form>
+    </h:body>
+</html>

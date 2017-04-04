@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Student Education</title>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerEducationForm">
+            <h3>Add Student Education</h3>
+           
+     
+         
+             <table>
+               <tr>
+               <td><h:outputText value="Education:"/></td>
+               <td> <h:inputText id="clientEducation" value="#{newEducationBean.educationEducation}"  required="true"/>
+                <h:message for="clientEducation"/> </td>
+                </tr> 
+              
+             
+               
+               <tr>
+               <td> <h:outputText value="School:"/></td>
+               <td><h:inputText id="clientSchool" value="#{newEducationBean.educationSchool}"  required="true"/>
+                <h:message for="clientSchool"/> </td>
+               	</tr>
+               	
+				<tr>
+               <td> <h:outputText value="School End Date:"/></td>
+               <td><h:inputText id="clientSchoolEndDate" value="#{newEducationBean.educationSchoolEndDate}" required="true"/>
+                <h:message for="clientSchoolEndDate"/> </td>
+				</tr>
+				
+				 <tr>
+				<td><h:outputText value="Education Specialization:"/></td>
+                <td><h:inputText id="clientEducationSpecialization" value="#{newEducationBean.educationSpecialization}" required="true"/>
+                <h:message for="clientEducationSpecialization"/> </td>
+				</tr>
+			
+			    <tr>
+				<td><h:outputText value="Education Institution:"/></td>
+                <td><h:inputText id="educationInstitution" value="#{newEducationBean.educationInstitution}" required="true"/>
+                <h:message for="educationInstitution"/> </td>
+				</tr>
+				
+			    <tr>
+				<td><h:outputText value="Education Institution Type:"/></td>
+                <td><h:inputText id="educationInstitutionType" value="#{newEducationBean.educationInstitutionType}" required="true"/>
+                <h:message for="educationInstitutionType"/> </td>
+				</tr>
+				
+				 <tr>
+				<td><h:outputText value="Education Institution End Date:"/></td>
+                <td><h:inputText id="clienteducationInstitutionEndDate" value="#{newEducationBean.educationInstitutionEndDate}"  required="true"/>
+                <h:message for="clienteducationInstitutionEndDate"/> </td>
+               </tr>
+             			
+				</table>
+				
+				
+            <h:commandButton action="#{newEducationBean.save()}" value="Add"/>
+        </h:form>
+    </h:body>
+</html>
