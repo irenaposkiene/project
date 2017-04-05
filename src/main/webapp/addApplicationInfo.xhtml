@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Application Info</title>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerApplicationInfo">
+            <h3>Add Application Info</h3>
+           
+         
+             <table>
+             
+              <tr>
+               <td><h:outputText value="Application Nr:"/></td>
+               <td> <h:inputText id="clientApplicationNr" value="#{newApplicationBean.applicationNr}"  required="true"/>
+                <h:message for="clientApplicationNr"/> </td>
+                </tr> 
+              
+               <tr>
+               <td><h:outputText value="Application Date:"/></td>
+               <td> <h:inputText id="clientApplicationDate" value="#{newApplicationBean.applicationDate}"  required="true"/>
+                <h:message for="clientApplicationDate"/> </td>
+                </tr> 
+              
+             
+              <tr>
+               <td><h:outputText value="Application Group:"/></td>
+               <td> <h:inputText id="clientApplicationGroup" value="#{newApplicationBean.applicationGroup}"  required="true"/>
+                <h:message for="clientApplicationGroup"/> </td>
+                </tr> 
+              
+               <tr>
+               <td><h:outputText value="Application Group Id:"/></td>
+               <td> <h:inputText id="clientApplicationGroupId" value="#{newApplicationBean.applicationGroupId}"  required="true"/>
+                <h:message for="clientApplicationGroupId"/> </td>
+               </tr> 
+              
+             			
+				</table>
+				
+				
+            <h:commandButton action="#{newApplicationBean.save()}" value="Add"/>
+        </h:form>
+    </h:body>
+</html>
