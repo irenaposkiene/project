@@ -18,6 +18,27 @@ public class NewEducationBean {
   	private String educationSchool;
     private String educationSchoolEndDate;
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    /*private String educationSpecialization;
+    private String educationInstitution;
+    private String educationInstitutionType;
+    private String educationInstitutionEndDate;
+*/
+    @Transactional
+    public String save() {
+        Education education = new Education (educationEducation, educationSchool, educationSchoolEndDate /*, educationSpecialization, educationInstitution, educationInstitutionType, educationInstitutionEndDate*/);
+       entityManager.persist(education);
+        return "education";
+=======
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
     private String educationSpecialization;
     private String educationInstitution;
     private String educationInstitutionType;
@@ -27,7 +48,20 @@ public class NewEducationBean {
     public String save() {
         Education education = new Education (educationEducation, educationSchool, educationSchoolEndDate, educationSpecialization, educationInstitution, educationInstitutionType, educationInstitutionEndDate);
        entityManager.persist(education);
+<<<<<<< HEAD
         return "education";
+=======
+<<<<<<< HEAD
+        return "education";
+=======
+<<<<<<< HEAD
+        return "education";
+=======
+        return "main";
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
     }
 
 	public EntityManager getEntityManager() {
@@ -61,7 +95,23 @@ public class NewEducationBean {
 	public void setEducationSchoolEndDate(String educationSchoolEndDate) {
 		this.educationSchoolEndDate = educationSchoolEndDate;
 	}
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+/*
+=======
+
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
 	public String getEducationSpecialization() {
 		return educationSpecialization;
 	}
@@ -93,6 +143,22 @@ public class NewEducationBean {
 	public void setEducationInstitutionEndDate(String educationInstitutionEndDate) {
 		this.educationInstitutionEndDate = educationInstitutionEndDate;
 	}
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+    
+=======
+<<<<<<< HEAD
+    
+=======
+<<<<<<< HEAD
+    */
+=======
+    
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
 
 }
