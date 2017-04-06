@@ -5,6 +5,16 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.transaction.annotation.Transactional;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+import lt.vtvpmc.ems.pw.entities.Application;
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
 import lt.vtvpmc.ems.pw.entities.Family;
 
 public class NewFamilyBean {
