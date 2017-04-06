@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+    <h:head>
+        <title>Education</title>
+        <h:outputStylesheet name="styles.css"/>
+    </h:head>
+
+    <h:body>
+    <h3> Informacija apie išsilavinimą </h3>
+        <h:form id="tableActionForm">
+            <h:dataTable value="#{papildListBean.papildList}" var="papild">
+   
+               <h:column>
+                    <f:facet name="header">
+                        Name
+                    </f:facet>
+                    <h:outputText value="#{papild.name}"/>
+                </h:column>
+               
+                <h:column>
+                    <f:facet name="header">
+                       Surname
+                    </f:facet>
+                    <h:outputText value="#{papild.surname}"/>
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        rusukalba2
+                    </f:facet>
+                    <h:outputText value="#{papild.rusukalba2}"/>
+                </h:column>
+               
+                 
+                 <h:column>
+                    <f:facet name="header">
+                       angkalba2
+                    </f:facet>
+                    <h:outputText value="#{papild.angkalba2}"/>
+                </h:column>
+               
+               
+                 <h:column>
+                    <f:facet name="header">
+                       vokkalba2
+                    </f:facet>
+                    <h:outputText value="#{papild.vokkalba2}"/>
+                </h:column>
+                             
+                 <h:column>
+                    <f:facet name="header">
+                       dizainas
+                    </f:facet>
+                    <h:outputText value="#{papild.dizainas}"/>
+                </h:column>
+               
+               
+                 <h:column>
+                    <f:facet name="header">
+                     daile
+                    </f:facet>
+                    <h:outputText value="#{papild.daile}"/>
+                </h:column>
+                
+                  <h:column>
+                    <f:facet name="header">
+                     teatras
+                    </f:facet>
+                    <h:outputText value="#{papild.teatras}"/>
+                </h:column>   	   
+                      	   
+                <h:column>
+                    <f:facet name="header">
+                     muzika
+                    </f:facet>
+                    <h:outputText value="#{papild.muzika}"/>
+                </h:column>       	   
+                             
+                  <h:column>
+                    <f:facet name="header">
+                    Informatika
+                    </f:facet>
+                    <h:outputText value="#{papild.informatika}"/>
+                </h:column>             
+                           
+                  <h:column>
+                    <f:facet name="header">
+                    lietuviugimtoji
+                    </f:facet>
+                    <h:outputText value="#{papild.lietuviugimtoji}"/>
+                </h:column>            
+                           
+                <h:column>
+                    <f:facet name="header">
+                    lietuviuvalstybine
+                    </f:facet>
+                    <h:outputText value="#{papild.lietuviuvalstybine}"/>
+                </h:column>             
+                           
+                <h:column>
+                    <f:facet name="header">
+                    uzskalba
+                    </f:facet>
+                    <h:outputText value="#{papild.uzskalba}"/>
+                </h:column>              
+   
+   				 <h:column>
+                    <f:facet name="header">
+                   istorija
+                    </f:facet>
+                    <h:outputText value="#{papild.istorija}"/>
+                </h:column> 
+   
+   				 <h:column>
+                    <f:facet name="header">
+                   matematika
+                    </f:facet>
+                    <h:outputText value="#{papild.matematika}"/>
+                </h:column> 
+                
+                 <h:column>
+                    <f:facet name="header">
+                   biologija
+                    </f:facet>
+                    <h:outputText value="#{papild.biologija}"/>
+                </h:column> 
+                
+                 <h:column>
+                    <f:facet name="header">
+                   chemija
+                    </f:facet>
+                    <h:outputText value="#{papild.chemija}"/>
+                </h:column> 
+                
+                 <h:column>
+                    <f:facet name="header">
+                   fizika
+                    </f:facet>
+                    <h:outputText value="#{papild.fizika}"/>
+                </h:column> 
+                
+                 <h:column>
+                    <f:facet name="header">
+                  biologijamod1
+                    </f:facet>
+                    <h:outputText value="#{papild.biologijamod1}"/>
+                </h:column> 
+                
+                <h:column>
+                    <f:facet name="header">
+                  chemijamod
+                    </f:facet>
+                    <h:outputText value="#{papild.chemijamod}"/>
+                </h:column> 
+                
+                <h:column>
+                    <f:facet name="header">
+                  biologijamod2
+                    </f:facet>
+                    <h:outputText value="#{papild.biologijamod2}"/>
+                </h:column> 
+   				
+   				<h:column>
+                    <f:facet name="header">
+                 fizikamod1
+                    </f:facet>
+                    <h:outputText value="#{papild.fizikamod1}"/>
+                </h:column> 
+      
+   				<h:column>
+                    <f:facet name="header">
+                 fizikamod2
+                    </f:facet>
+                    <h:outputText value="#{papild.fizikamod2}"/>
+                </h:column> 
+                
+                <h:column>
+                    <f:facet name="header">
+                 fizikamod3
+                    </f:facet>
+                    <h:outputText value="#{papild.fizikamod3}"/>
+                </h:column> 
+    		
+    			 <h:column>
+                    <f:facet name="header">
+               matematikosmod1
+                    </f:facet>
+                    <h:outputText value="#{papild.matematikosmod1}"/>
+                </h:column> 
+    
+    			<h:column>
+                    <f:facet name="header">
+               matematikosmod2
+                    </f:facet>
+                    <h:outputText value="#{papild.matematikosmod2}"/>
+                </h:column> 
+                
+                <h:column>
+                    <f:facet name="header">
+               matematikosmod3
+                    </f:facet>
+                    <h:outputText value="#{papild.matematikosmod3}"/>
+                </h:column> 
+  
+              <h:column>
+                    <f:facet name="header">
+                        Actions
+                    </f:facet>
+                    <h:commandLink actionListener="#{papildListBean.removePapil(papild)}" value="Delete"/>
+                    
+                    
+                </h:column>
+               
+                
+                            
+            </h:dataTable>
+        </h:form>
+
+        
+ 
+    </h:body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Study Plan Additional Plan</title>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerPapildForm">
+            <h3>Pasirenkamieji profesijos arba bendrojo ugdymo dalykai</h3>
+       
+   
+             <table>
+               <tr>
+               <td><h:outputText value="PapildName:"/></td>
+               <td> <h:inputText id="clientPapildName" value="#{newPapildBean.papildName}"  required="true"/>
+                <h:message for="clientPapildName"/> </td>
+                </tr> 
+              
+              <tr>
+               <td><h:outputText value="PapildSurname:"/></td>
+               <td> <h:inputText id="clientPapildSurname" value="#{newPapildBean.papildSurname}"  required="true"/>
+                <h:message for="clientPapildSurname"/> </td>
+                </tr> 
+                
+              <tr>
+               <td> <h:outputText value="PapildRusukalba2:"/></td>
+               <td><h:inputText id="clientPapildRusukalba2" value="#{newPapildBean.papildRusukalba2}"  required="true"/>
+                <h:message for="clientPapildRusukalba2"/> </td>
+               	</tr>
+               	<tr>
+               <td> <h:outputText value="PapildAngkalba2:"/></td>
+               <td><h:inputText id="clientPapildAngkalba2" value="#{newPapildBean.papildAngkalba2}"  required="true"/>
+                <h:message for="clientPapildAngkalba2"/> </td>
+               	</tr>
+               	<tr>
+               <td> <h:outputText value="PapildVokkalba2:"/></td>
+               <td><h:inputText id="clientPapildVokkalba2" value="#{newPapildBean.papildVokkalba2}"  required="true"/>
+                <h:message for="clientPapildVokkalba2"/> </td>
+               	</tr>
+         
+				<tr>
+               <td> <h:outputText value="PapildDizainas:"/></td>
+               <td><h:inputText id="clientPapildDizainas" value="#{newPapildBean.papildDizainas}" required="true"/>
+                <h:message for="clientPapildDizainas"/> </td>
+				</tr>
+				<tr>
+               <td> <h:outputText value="PapildDaile:"/></td>
+               <td><h:inputText id="clientPapildDaile" value="#{newPapildBean.papildDaile}" required="true"/>
+                <h:message for="clientPapildDaile"/> </td>
+				</tr>
+				<tr>
+               <td> <h:outputText value="PapildTeatras:"/></td>
+               <td><h:inputText id="clientPapildTeatras" value="#{newPapildBean.papildTeatras}" required="true"/>
+                <h:message for="clientPapildTeatras"/> </td>
+				</tr>
+             	<tr>
+               <td> <h:outputText value="PapildMuzika:"/></td>
+               <td><h:inputText id="clientPapildMuzika" value="#{newPapildBean.papildMuzika}" required="true"/>
+                <h:message for="clientPapildMuzika"/> </td>
+				</tr>
+				<tr>
+               <td> <h:outputText value="PapildInformatika:"/></td>
+               <td><h:inputText id="clientPapildInformatika" value="#{newPapildBean.papildInformatika}" required="true"/>
+                <h:message for="clientPapildInformatika"/> </td>
+				</tr>
+				
+				<tr>
+               <td> <h:outputText value="PapildLietuviugimtoji:"/></td>
+               <td><h:inputText id="clientPapildLietuviugimtoji" value="#{newPapildBean.papildLietuviugimtoji}" required="true"/>
+                <h:message for="clientPapildLietuviugimtoji"/> </td>
+				</tr>
+				<tr>
+               <td> <h:outputText value="PapildLietuviuvalstybine:"/></td>
+               <td><h:inputText id="clientPapildLietuviuvalstybine" value="#{newPapildBean.papildLietuviuvalstybine}" required="true"/>
+                <h:message for="clientPapildLietuviuvalstybine"/> </td>
+				</tr>
+				<tr>
+               <td> <h:outputText value="PapildUzskalba:"/></td>
+               <td><h:inputText id="clientPapildUzskalba" value="#{newPapildBean.papildUzskalba}" required="true"/>
+                <h:message for="clientPapildUzskalba"/> </td>
+				</tr>
+				
+				<tr>
+               <td> <h:outputText value="PapildIstorija:"/></td>
+               <td><h:inputText id="clientPapildIstorija" value="#{newPapildBean.papildIstorija}" required="true"/>
+                <h:message for="clientPapildIstorija"/> </td>
+				</tr>
+				<tr>
+               <td> <h:outputText value="PapildMatematika:"/></td>
+               <td><h:inputText id="clientPapildMatematika" value="#{newPapildBean.papildMatematika}" required="true"/>
+                <h:message for="clientPapildMatematika"/> </td>
+				</tr>
+ 				<tr>
+               <td> <h:outputText value="PapildBiologija:"/></td>
+               <td><h:inputText id="clientPapildBiologija" value="#{newPapildBean.papildBiologija}" required="true"/>
+                <h:message for="clientPapildBiologija"/> </td>
+				</tr>
+    			<tr>
+               <td> <h:outputText value="PapildChemija:"/></td>
+               <td><h:inputText id="clientPapildChemija" value="#{newPapildBean.papildChemija}" required="true"/>
+                <h:message for="clientPapildChemija"/> </td>
+				</tr>
+				<tr>
+               <td> <h:outputText value="PapildFizika:"/></td>
+               <td><h:inputText id="clientPapildFizika" value="#{newPapildBean.papildFizika}" required="true"/>
+                <h:message for="clientPapildFizika"/> </td>
+				</tr>
+				
+				<tr>
+               <td> <h:outputText value="PapildBiologijamod1:"/></td>
+               <td><h:inputText id="clientPapildBiologijamod1" value="#{newPapildBean.papildBiologijamod1}" required="true"/>
+                <h:message for="clientPapildBiologijamod1"/> </td>
+				</tr>
+				<tr>
+               <td> <h:outputText value="PapildChemijamod:"/></td>
+               <td><h:inputText id="clientPapildChemijamod" value="#{newPapildBean.papildChemijamod}" required="true"/>
+                <h:message for="clientPapildChemijamod"/> </td>
+				</tr>
+				<tr>
+               <td> <h:outputText value="PapildBiologijamod2:"/></td>
+               <td><h:inputText id="clientPapildBiologijamod2" value="#{newPapildBean.papildBiologijamod2}" required="true"/>
+                <h:message for="clientPapildBiologijamod2"/> </td>
+				</tr>
+				
+				<tr>
+               <td> <h:outputText value="PapildFizikamod1:"/></td>
+               <td><h:inputText id="clientPapildFizikamod1" value="#{newPapildBean.papildFizikamod1}" required="true"/>
+                <h:message for="clientPapildFizikamod1"/> </td>
+				</tr>
+  				<tr>
+               <td> <h:outputText value="PapildFizikamod2:"/></td>
+               <td><h:inputText id="clientPapildFizikamod2" value="#{newPapildBean.papildFizikamod2}" required="true"/>
+                <h:message for="clientPapildFizikamod2"/> </td>
+				</tr>
+   				<tr>
+               <td> <h:outputText value="PapildFizikamod3:"/></td>
+               <td><h:inputText id="clientPapildFizikamod3" value="#{newPapildBean.papildFizikamod3}" required="true"/>
+                <h:message for="clientPapildFizikamod3"/> </td>
+				</tr>
+   
+  				 <tr>
+               <td> <h:outputText value="PapildMatematikosmod1:"/></td>
+               <td><h:inputText id="clientPapildMatematikosmod1" value="#{newPapildBean.papildMatematikosmod1}" required="true"/>
+                <h:message for="clientPapildMatematikosmod1"/> </td>
+				</tr>
+   				<tr>
+               <td> <h:outputText value="PapildMatematikosmod2:"/></td>
+               <td><h:inputText id="clientPapildMatematikosmod2" value="#{newPapildBean.papildMatematikosmod2}" required="true"/>
+                <h:message for="clientPapildMatematikosmod2"/> </td>
+				</tr>
+  			 <tr>
+               <td> <h:outputText value="PapildMatematikosmod3:"/></td>
+               <td><h:inputText id="clientPapildMatematikosmod3" value="#{newPapildBean.papildMatematikosmod3}" required="true"/>
+                <h:message for="clientPapildMatematikosmod3"/> </td>
+				</tr>
+  	
+				</table>
+				
+				
+            <h:commandButton action="#{newPapildBean.save()}" value="Add"/>
+        </h:form>
+    </h:body>
+</html>

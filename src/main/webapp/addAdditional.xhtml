@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Additional Info</title>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerApplicationInfo">
+            <h3>Add Additional Info</h3>
+           
+               
+             <table>
+             
+              <tr>
+               <td><h:outputText value="Hostel:"/></td>
+               <td> <h:inputText id="clientHostel" value="#{newAdditionalBean.additionalHostel}"  required="true"/>
+                <h:message for="clientHostel"/> </td>
+                </tr> 
+              
+              <tr>
+               <td><h:outputText value="Howknow:"/></td>
+               <td> <h:inputText id="clientHowknow" value="#{newAdditionalBean.additionalHowknow}"  required="true"/>
+                <h:message for="clientHowknow"/> </td>
+               </tr> 
+               
+              
+              <tr>
+               <td><h:outputText value="Refuce:"/></td>
+               <td> <h:inputText id="clientRefuce" value="#{newAdditionalBean.additionalRefuce}"  required="true"/>
+                <h:message for="clientRefuce"/> </td>
+               </tr> 
+               
+             			
+				</table>
+				
+				
+            <h:commandButton action="#{newAdditionalBean.save()}" value="Add"/>
+        </h:form>
+    </h:body>
+</html>
