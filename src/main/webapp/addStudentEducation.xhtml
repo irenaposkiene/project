@@ -14,6 +14,7 @@
          
              <table>
                <tr>
+<<<<<<< HEAD
                <td><h:outputText value="Išsilavinimas:"/></td>
 			    <td> <h:selectOneMenu id="clientEducation" value="#{newEducationBean.educationEducation}"  required="false">
                  <f:selectItem itemValue="---------------" itemLabel="-------------"/>
@@ -26,45 +27,86 @@
                <tr>
                <td> <h:outputText value="Mokyklos pavadinimas :"/></td>
                <td><h:inputText id="clientSchool" value="#{newEducationBean.educationSchool}"  required="false"/>
+=======
+               <td><h:outputText value="Education:"/></td>
+               <td> <h:inputText id="clientEducation" value="#{newEducationBean.educationEducation}"  required="true"/>
+                <h:message for="clientEducation"/> </td>
+                </tr> 
+              
+             
+               
+               <tr>
+               <td> <h:outputText value="School:"/></td>
+               <td><h:inputText id="clientSchool" value="#{newEducationBean.educationSchool}"  required="true"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
                 <h:message for="clientSchool"/> </td>
                	</tr>
                	
 				<tr>
+<<<<<<< HEAD
                <td> <h:outputText value="Mokyklos baigimo metai:"/></td>
                <td><h:inputText id="clientSchoolEndDate" value="#{newEducationBean.educationSchoolEndDate}" required="false"/>
+=======
+               <td> <h:outputText value="School End Date:"/></td>
+               <td><h:inputText id="clientSchoolEndDate" value="#{newEducationBean.educationSchoolEndDate}" required="true"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
                 <h:message for="clientSchoolEndDate"/> </td>
 				</tr>
 				
 				 <tr>
+<<<<<<< HEAD
 				<td><h:outputText value="Įgyta specialybė :"/></td>
                 <td><h:inputText id="clientEducationSpecialization" value="#{newEducationBean.educationSpecialization}" required="false"/>
+=======
+				<td><h:outputText value="Education Specialization:"/></td>
+                <td><h:inputText id="clientEducationSpecialization" value="#{newEducationBean.educationSpecialization}" required="true"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
                 <h:message for="clientEducationSpecialization"/> </td>
 				</tr>
 			
 			    <tr>
+<<<<<<< HEAD
 				<td><h:outputText value="Institucijos pavadinimas:"/></td>
                 <td><h:inputText id="educationInstitution" value="#{newEducationBean.educationInstitution}" required="false"/>
+=======
+				<td><h:outputText value="Education Institution:"/></td>
+                <td><h:inputText id="educationInstitution" value="#{newEducationBean.educationInstitution}" required="true"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
                 <h:message for="educationInstitution"/> </td>
 				</tr>
 				
 			    <tr>
+<<<<<<< HEAD
 				<td><h:outputText value="Institucijos tipas:"/></td>
                 <td><h:inputText id="educationInstitutionType" value="#{newEducationBean.educationInstitutionType}" required="false"/>
+=======
+				<td><h:outputText value="Education Institution Type:"/></td>
+                <td><h:inputText id="educationInstitutionType" value="#{newEducationBean.educationInstitutionType}" required="true"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
                 <h:message for="educationInstitutionType"/> </td>
 				</tr>
 				
 				 <tr>
+<<<<<<< HEAD
 				<td><h:outputText value="Baigimo metai:"/></td>
                 <td><h:inputText id="clienteducationInstitutionEndDate" value="#{newEducationBean.educationInstitutionEndDate}"  required="false"/>
+=======
+				<td><h:outputText value="Education Institution End Date:"/></td>
+                <td><h:inputText id="clienteducationInstitutionEndDate" value="#{newEducationBean.educationInstitutionEndDate}"  required="true"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
                 <h:message for="clienteducationInstitutionEndDate"/> </td>
                </tr>
              			
 				</table>
 				
 				
+<<<<<<< HEAD
             <h:commandButton action="#{newEducationBean.save()}" value="Išsaugoti"/>
             <h:commandButton id="Grizti" action="main.xhtml" value="Grįžti"/>
             
+=======
+            <h:commandButton action="#{newEducationBean.save()}" value="Add"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
         </h:form>
     </h:body>
 </html>

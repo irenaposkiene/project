@@ -28,23 +28,34 @@ public class Application implements Serializable {
   	private String group;
     private String groupId;
     
+<<<<<<< HEAD
     public boolean dok;
     
+=======
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
     public Application () {
         
      }
     
+<<<<<<< HEAD
     public Application (String nr, String date, String group, String groupId, boolean dok) {
+=======
+    public Application (String nr, String date, String group, String groupId) {
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
     
     this.nr = nr;	
     this.date = date;
     this.group = group;
     this.date=date;
+<<<<<<< HEAD
     this.dok=dok;
+=======
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
      
 }
 
 
+<<<<<<< HEAD
 	public boolean isDok() {
 		return dok;
 	}
@@ -53,6 +64,8 @@ public class Application implements Serializable {
 		this.dok = dok;
 	}
 
+=======
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
 	public Long getId() {
 		return id;
 	}

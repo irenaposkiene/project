@@ -18,6 +18,7 @@ public class NewApplicationBean {
     private String applicationDate;
   	private String applicationGroup;
     private String applicationGroupId;
+<<<<<<< HEAD
     private boolean applicationDok;
     
    
@@ -35,6 +36,14 @@ public class NewApplicationBean {
 	@Transactional
     public String save() {
         Application application = new Application( applicationNr, applicationDate, applicationGroup, applicationGroupId, applicationDok );
+=======
+    
+   
+    
+    @Transactional
+    public String save() {
+        Application application = new Application( applicationNr, applicationDate, applicationGroup, applicationGroupId );
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
         entityManager.persist(application);
         return "application";
     }
