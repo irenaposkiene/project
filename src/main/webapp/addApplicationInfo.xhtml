@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Application Info</title>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerApplicationInfo">
+            <h3>Informacija apie prašymą</h3>
+           
+         
+             <table>
+             
+              <tr>
+               <td><h:outputText value="Prašymo Nr:"/></td>
+               <td> <h:inputText id="clientApplicationNr" value="#{newApplicationBean.applicationNr}" />
+                <h:message for="clientApplicationNr"/> </td>
+                </tr> 
+              
+               <tr>
+               <td><h:outputText value="Prašymo Data:"/></td>
+               <td> <h:inputText id="clientApplicationDate" value="#{newApplicationBean.applicationDate}"  />
+                <h:message for="clientApplicationDate"/> </td>
+                </tr> 
+              
+             
+              <tr>
+               <td><h:outputText value="Grupė:"/></td>
+               <td> <h:inputText id="clientApplicationGroup" value="#{newApplicationBean.applicationGroup}" />
+                <h:message for="clientApplicationGroup"/> </td>
+                </tr> 
+              
+               <tr>
+               <td><h:outputText value="Pakopa:"/></td>
+               <td> <h:inputText id="clientApplicationGroupId" value="#{newApplicationBean.applicationGroupId}"  />
+                <h:message for="clientApplicationGroupId"/> </td>
+               </tr> 
+              
+            <tr>
+               <td><h:outputText value="Dokumentai:"/></td>
+			    <td>  <h:selectManyCheckbox id="clientApplicationDok" value="#{newApplicationBean.applicationDok}"  >
+                	<f:selectItem itemValue="Išsilavinimo dokumentas" itemLabel="Išsilavinimo dokumentas" />
+                    <f:selectItem itemValue="Sveikatos pažymėjimas" itemLabel="Sveikatos pažymėjimas" />
+                    <f:selectItem itemValue="Nuotraukos" itemLabel="Nuotraukos 3X4 (2-4 vnt.)" />
+                    <f:selectItem itemValue="Paso kopija (ID kopija)" itemLabel="Paso kopija (tapatybės kortelės kopija)" />
+                    <f:selectItem itemValue="Šauktinio liudijimas" itemLabel="Šauktinio liudijimas" />
+                    <f:selectItem itemValue="Stojamasis mokestis" itemLabel="Stojamasis mokestis" />
+                 </h:selectManyCheckbox></td> </tr>
+				</table>
+				
+              
+				
+				
+            <h:commandButton action="#{newApplicationBean.save()}" value="Išsaugoti"/>
+            <h:commandButton id="Grizti" action="main.xhtml" value="Grįžti"/>
+      
+        </h:form>
+    </h:body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+    <h:head>
+        <title>Family</title>
+        <h:outputStylesheet name="styles.css"/>
+    </h:head>
+
+    <h:body>
+    <h3> Informacija apie tėvus/globėjus </h3>
+        <h:form id="tableActionForm">
+            <h:dataTable value="#{familyListBean.familyList}" var="family">
+            
+               <h:column>
+                    <f:facet name="header">
+                       Tėvo vardas
+                    </f:facet>
+                    <h:outputText value="#{family.fatherName}"/>
+                </h:column>
+               
+                <h:column>
+                    <f:facet name="header">
+                       Tėvo pavardė
+                    </f:facet>
+                    <h:outputText value="#{family.fatherSurname}"/>
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Tėvo adresas
+                    </f:facet>
+                    <h:outputText value="#{family.fatherAdress}"/>
+                </h:column>
+               
+                 
+                 <h:column>
+                    <f:facet name="header">
+                      Tėvo telefonas
+                    </f:facet>
+                    <h:outputText value="#{family.fatherPhone}"/>
+                </h:column>
+              	
+                 <h:column>
+                    <f:facet name="header">
+                       Motinos vardas
+                    </f:facet>
+                    <h:outputText value="#{family.motherName}"/>
+                </h:column>
+               
+                 <h:column>
+                    <f:facet name="header">
+                       Motinos pavardė
+                    </f:facet>
+                    <h:outputText value="#{family.motherSurname}"/>
+                </h:column>
+               
+                 <h:column>
+                    <f:facet name="header">
+                       Motinos adresas
+                    </f:facet>
+                    <h:outputText value="#{family.motherAdress}"/>
+                </h:column>
+               
+                 <h:column>
+                    <f:facet name="header">
+                       Motinos telefonas
+                    </f:facet>
+                    <h:outputText value="#{family.motherPhone}"/>
+                </h:column>
+               
+                 
+               <h:column>
+                    <f:facet name="header">
+                       Globėjo/os vardas
+                    </f:facet>
+                    <h:outputText value="#{family.patronName}"/>
+                </h:column>
+               
+                 <h:column>
+                    <f:facet name="header">
+                       Globėjo/os pavardė
+                    </f:facet>
+                    <h:outputText value="#{family.patronSurname}"/>
+                </h:column>
+               
+                 <h:column>
+                    <f:facet name="header">
+                       Globėjo/os adresas
+                    </f:facet>
+                    <h:outputText value="#{family.patronAdress}"/>
+                </h:column>
+               
+                 <h:column>
+                    <f:facet name="header">
+                       Globėjo/os telefonas
+                    </f:facet>
+                    <h:outputText value="#{family.patronPhone}"/>
+                </h:column>
+                    	   
+                <h:column>
+                    <f:facet name="header">
+                        Actions
+                    </f:facet>
+                       <h:commandLink actionListener="#{familyListBean.removeFamily(family)}" value="Ištrinti"/>
+                 <h:commandButton id="Grizti" action="main.xhtml" value="Grįžti"/>
+        
+               </h:column>
+               
+                                    
+            </h:dataTable>
+        </h:form>
+
+       
+        
+ 
+    </h:body>
+</html>

@@ -9,72 +9,139 @@
     </h:head>
 
     <h:body>
+    <h3> Moksleivių priėmimo registracijos sistema</h3>
         <h:form id="tableActionForm">
             <h:dataTable value="#{studentListBean.studentList}" var="student">
             
        
                <h:column>
                     <f:facet name="header">
-                        First Name
+                        Moksleivio vardas
                     </f:facet>
                     <h:outputText value="#{student.firstName}"/>
                 </h:column>
                
                 <h:column>
                     <f:facet name="header">
-                        Last Name
+                        Moksleivio pavardė
                     </f:facet>
                     <h:outputText value="#{student.lastName}"/>
                 </h:column>
                 
                  <h:column>
                     <f:facet name="header">
-                        Birthday
+                        Moksleivio gimimo diena
                     </f:facet>
                     <h:outputText value="#{student.birthday}"/>
                 </h:column>
                
                 <h:column>
                     <f:facet name="header">
-                        Adress
+                        Moksleivio adresas
                     </f:facet>
                     <h:outputText value="#{student.adress}"/>
                 </h:column>
                 
-                        
+                 <h:column>
+                  
+                    <f:facet name="header">
+                        Savivaldybė
+                    </f:facet>
+                    <h:outputText value="#{student.location}"/>
+                </h:column>
+             
+                                             
                 <h:column>
                     <f:facet name="header">
-                        Phone
+                        Moksleivio adresas
                     </f:facet>
                     <h:outputText value="#{student.phone}"/>
                 </h:column>
                 
                 <h:column>
                 <f:facet name="header">
-                       Email
+                       Moksleivio el.paštas
                     </f:facet>
                     <h:outputText value="#{student.email}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        FamilyState
-                    </f:facet>
+                       Moksleivio šeimyminė padėtis
+                   </f:facet>
                     <h:outputText value="#{student.familyState}"/>
-                </h:column>
-           
-                
+                </h:column>			
+           	    
+                        
                 <h:column>
                     <f:facet name="header">
-                        Actions
+                        Ištrinti
                     </f:facet>
-                    <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Delete"/>
+                    <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Ištrinti"/>
+                    
+               </h:column>
+               
+                <h:column>
+                    <f:facet name="header">
+                       Išsilavinimas
+                    </f:facet>
+                    
+                   <h:form id="educationForm">
+           			 <h:commandButton id="addStudentEducationBtn" action="addStudentEducation" value="Išsilavinimo informacija"/>
+      			  </h:form>
+                    
                 </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Šeimyninė padėtis
+                    </f:facet>
+                  <h:commandButton id="addFamilyBtn" action="addFamilyInfo" value="Šeimos informacija"/>
+         
+                 </h:column>
+        		                
+                 <h:column>
+                    <f:facet name="header">
+                        Papildoma informacija
+                    </f:facet>
+                  <h:commandButton id="addAdditionalBtn" action="addAdditional" value="Papildoma informacija"/>
+         
+                 </h:column>
+                          
+                <h:column>
+                    <f:facet name="header">
+                        Moksleivio mokymo planas(privalomieji dalykai)
+                    </f:facet>
+                  <h:commandButton id="addStudyPlanBtn" action="addStudyPlan" value="Pridėti privalomus mokymo plano dalykus "/>
+      
+                 </h:column>
+                 
+                   <h:column>
+                    <f:facet name="header">
+                        Moksleivio mokymo planas(pasirenkamieji dalykai)
+                    </f:facet>
+                  <h:commandButton id="addStudyPlanPapildBtn" action="addPapildPlan" value="Pridėti pasirenkamuosius mokymo plano dalykus"/>
+      
+                 </h:column>    
+                 
+                  
+                 <h:column>
+                    <f:facet name="header">
+                        Prašymo informacija
+                    </f:facet>
+                  <h:commandButton id="addApplicationBtn" action="addApplicationInfo" value="Prašymo informacija"/>
+         
+                 </h:column>
+                              
+                        
             </h:dataTable>
         </h:form>
 
         <h:form id="actionForm">
-            <h:commandButton id="addNewStudentBtn" action="addNewStudent" value="Add New Student"/>
+            <h:commandButton id="addNewStudentBtn" action="addNewStudent" value="Pridėti moksleivį"/>
         </h:form>
+        
+       
 
+ 
     </h:body>
 </html>

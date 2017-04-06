@@ -3,68 +3,130 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core">
     <h:head>
-        <title>Add New Student</title>
+        <title>Moksleivio informacija</title>
     </h:head>
     
     <h:body>
         <h:form id="newCustomerForm">
-            <h3>Add New Student</h3>
+            <h3>Moksleivio informacija</h3>
            
          
              <table>
                <tr>
-               <td><h:outputText value="Name:"/></td>
+               <td><h:outputText value="Vardas:"/></td>
                <td> <h:inputText id="clientName" value="#{newStudentBean.studentFirstName}"  required="true"/>
-                <h:message for="clientName"/> </td>
-               
-              
-             
+                <h:message for="clientName"/>* privalomas laukas</td>
+                                       
                </tr>  
                <tr>
-               <td> <h:outputText value="Surname:"/></td>
+               <td> <h:outputText value="Pavardė:"/></td>
                <td><h:inputText id="clientSurname" value="#{newStudentBean.studentLastName}"  required="true"/>
-                <h:message for="clientSurname"/> </td>
+                <h:message for="clientSurname"/>* privalomas laukas</td>
               
                 
 				</tr>
 				<tr>
-               <td> <h:outputText value="Birthday:"/></td>
+               <td> <h:outputText value="Gimimo data:"/></td>
                <td><h:inputText id="clientBirthday" value="#{newStudentBean.studentBirthday}" required="true"/>
-                <h:message for="clientBirthday"/> </td>
+                <h:message for="clientBirthday"/>* privalomas laukas</td>
 				</tr>
 				 <tr>
-				<td><h:outputText value="Adress:"/></td>
+				<td><h:outputText value="Adresas:"/></td>
                 <td><h:inputText id="clientAdress" value="#{newStudentBean.studentAdress}" required="true"/>
-                <h:message for="clientAdress"/> </td>
+                <h:message for="clientAdress"/>* gyvenamoji vieta </td>
 				</tr>
-			
-			
-			 <tr>
-				<td><h:outputText value="Phone:"/></td>
+						
+				
+				<tr>
+				<td><h:outputText value="Savivaldybė:"/></td>
+				<td>  <h:selectOneMenu id="clientLocation" value="#{newStudentBean.studentLocation}" required="true">
+                    <f:selectItem itemValue="--------------" itemLabel="--------------" />
+                    <f:selectItem itemValue="Akmenės" itemLabel="Akmenės" />
+                    <f:selectItem itemValue="Alytaus" itemLabel="Alytaus" />
+                    <f:selectItem itemValue="Anykščių" itemLabel="Anykščių" />
+                    <f:selectItem itemValue="Birštono" itemLabel="Birštono" />
+                   <f:selectItem itemValue="Druskininkų" itemLabel="Druskininkų" />
+                    <f:selectItem itemValue="Elektrėnų" itemLabel="Elektrėnų" />
+                    <f:selectItem itemValue="Ignalinos" itemLabel="Ignalinos" />
+                    <f:selectItem itemValue="Jonavos" itemLabel="Jonavos" />
+                    <f:selectItem itemValue="Joniškio" itemLabel="Joniškio" />
+                    <f:selectItem itemValue="Jurbarko" itemLabel="Jurbarko" />
+                    <f:selectItem itemValue="Kaišiadorių" itemLabel="Kaišiadorių" />
+                    <f:selectItem itemValue="Kalvarijos" itemLabel="Kalvarijos" />
+                    <f:selectItem itemValue="Kauno" itemLabel="Kauno savivaldybė" />
+                    <f:selectItem itemValue="Kazlų Rūdos" itemLabel="Kazlų Rūdos" />
+                    <f:selectItem itemValue="Kėdainių" itemLabel="Kėdainių" />
+                    <f:selectItem itemValue="Kelmės" itemLabel="Kelmės" />
+                    <f:selectItem itemValue="Klaipėdos" itemLabel="Klaipėdos" />
+                    <f:selectItem itemValue="Kretingos" itemLabel="Kretingos" />
+                    <f:selectItem itemValue="Kupiškio" itemLabel="Kupiškio" />
+                    <f:selectItem itemValue="Lazdijų" itemLabel="Lazdijų" />
+                    <f:selectItem itemValue="Marijampolės" itemLabel="Marijampolės"/>
+                    <f:selectItem itemValue="Mažeikių" itemLabel="Mažeikių" />
+                    <f:selectItem itemValue="Molėtų" itemLabel="Molėtų" />
+                    <f:selectItem itemValue="Neringos" itemLabel="Neringos" />
+                    <f:selectItem itemValue="Pagėgių" itemLabel="Pagėgių" />
+                    <f:selectItem itemValue="Pakruojo" itemLabel="Pakruojo" />
+                    <f:selectItem itemValue="Palangos" itemLabel="Palangos" />
+                    <f:selectItem itemValue="Panevėžio" itemLabel="Panevėžio" />
+                    <f:selectItem itemValue="Pasvalio" itemLabel="Pasvalio" />
+                    <f:selectItem itemValue="Plungės" itemLabel="Plungės" />
+                    <f:selectItem itemValue="Prienų" itemLabel="Prienų" />
+                    <f:selectItem itemValue="Radviliškio" itemLabel="Radviliškio" />
+                    <f:selectItem itemValue="Raseinių" itemLabel="Raseinių" />
+                    <f:selectItem itemValue="Rietavo" itemLabel="Rietavo" />
+                    <f:selectItem itemValue="Rokiškio" itemLabel="Rokiškio" />
+                    <f:selectItem itemValue="Skuodo" itemLabel="Skuodo" />
+                    <f:selectItem itemValue="Šakių" itemLabel="Šakių" />
+                    <f:selectItem itemValue="Šalčininkų" itemLabel="Šalčininkų" />
+                    <f:selectItem itemValue="Šiaulių" itemLabel="Šiaulių" />
+                    <f:selectItem itemValue="Šilalės" itemLabel="Šilalės" />
+                    <f:selectItem itemValue="Šilutės" itemLabel="Šilutės" />
+                    <f:selectItem itemValue="Širvintų" itemLabel="Širvintų" />
+                    <f:selectItem itemValue="Švenčionių" itemLabel="Švenčionių" />
+                    <f:selectItem itemValue="Tauragės" itemLabel="Tauragės" />
+                    <f:selectItem itemValue="Telšių" itemLabel="Telšių" />
+                    <f:selectItem itemValue="Trakų" itemLabel="Trakų" />
+                    <f:selectItem itemValue="Ukmergės" itemLabel="Ukmergės" />
+                    <f:selectItem itemValue="Utenos" itemLabel="Utenos" />
+                    <f:selectItem itemValue="Varėnos" itemLabel="Varėnos" />
+                    <f:selectItem itemValue="Vilkaviškio" itemLabel="Vilkaviškio" />
+                    <f:selectItem itemValue="Vilniaus" itemLabel="Vilniaus" />
+                    <f:selectItem itemValue="Visagino" itemLabel="Visagino" />
+                    <f:selectItem itemValue="Zarasų" itemLabel="Zarasų" />
+                </h:selectOneMenu> miesto/rajono savivaldybė</td></tr>
+						
+			    <tr>
+				<td><h:outputText value="Telefonas:"/></td>
                 <td><h:inputText id="clientPhone" value="#{newStudentBean.studentPhone}" required="true"/>
-                <h:message for="clientPhone"/> </td>
+                <h:message for="clientPhone"/>namų/mobilus </td>
 				</tr>
 				
 				 <tr>
 				<td><h:outputText value="Email:"/></td>
                 <td><h:inputText id="clientEmail" value="#{newStudentBean.studentEmail}"  required="true"/>
                 <h:message for="clientEmail"/> </td>
-               
-             
-				</tr>
-				 <tr>
-				<td><h:outputText value="FamilyState:"/></td>
-                <td><h:inputText id="clientFamilyState" value="#{newStudentBean.studentFamilyState}"  required="true"/>
-                <h:message for="clientFamilyState"/> </td>
-                
+                    
 				</tr>
 				
-				
-							
+               <tr>
+               <td><h:outputText value="Šeimyninė padėtis:"/></td>
+			    <td> <h:selectOneMenu id="clientFamilyState" value="#{newStudentBean.studentFamilyState}" required="true">
+                    <f:selectItem itemValue="---------------" itemLabel="-------------"/>
+                 	<f:selectItem itemValue="Vedęs/Ištekėjusi" itemLabel="Vedęs/Ištekėjusi"/>  
+                    <f:selectItem itemValue="Nevedęs/Netekėjusi" itemLabel="Nevedęs/Netekėjusi"/>                    
+                    <f:selectItem itemValue="Našlaitis" itemLabel="Našlaitis"/>
+                 </h:selectOneMenu></td></tr>
+                				
 				</table>
-				
-				
-            <h:commandButton action="#{newStudentBean.save()}" value="Add"/>
+				 			 
+            <h:commandButton action="#{newStudentBean.save()}" value="Išsaugoti"/>
+            
+     	
+              
+            
         </h:form>
+        
     </h:body>
+    
 </html>

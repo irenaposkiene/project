@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+    <h:head>
+        <title>Application</title>
+        <h:outputStylesheet name="styles.css"/>
+    </h:head>
+
+    <h:body>
+    <h3> Informacija apie prašymą</h3>
+        <h:form id="tableActionForm">
+            <h:dataTable value="#{applicationListBean.applicationList}" var="application">
+          
+       
+               <h:column>
+                    <f:facet name="header">
+                        Prašymo Nr
+                    </f:facet>
+                    <h:outputText value="#{application.nr}"/>
+                </h:column>
+               
+                <h:column>
+                    <f:facet name="header">
+                        Prašymo Data
+                    </f:facet>
+                    <h:outputText value="#{application.date}"/>
+                </h:column>
+                    	   
+                <h:column>
+                    <f:facet name="header">
+                        Grupė
+                    </f:facet>
+                    <h:outputText value="#{application.group}"/>
+                </h:column>
+                      	   
+                 <h:column>
+                    <f:facet name="header">
+                        Pakopa
+                    </f:facet>
+                    <h:outputText value="#{application.groupId}"/>
+                </h:column>
+                       
+                       
+                 <h:column>
+                    <f:facet name="header">
+                        Dokumentai
+                    </f:facet>
+                     <h:outputText value="#{application.Dok}"/>
+                      </h:column>       
+                              
+	    	    
+                <h:column>
+                    <f:facet name="header">
+                        Actions
+                    </f:facet>
+                    <h:commandLink actionListener="#{applicationListBean.removeApplication(application)}" value="Ištrinti"/>
+                    
+                    
+                </h:column>
+               
+                
+                            
+            </h:dataTable>
+        </h:form>
+
+      
+ 
+    </h:body>
+</html>
