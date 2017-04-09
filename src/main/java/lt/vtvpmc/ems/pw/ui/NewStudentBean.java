@@ -2,54 +2,58 @@ package lt.vtvpmc.ems.pw.ui;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.validation.constraints.NotNull;
+
 import lt.vtvpmc.ems.pw.entities.Student;
 import org.springframework.transaction.annotation.Transactional;
+import java.util.Date;
 
 public class NewStudentBean {
-    
+	@NotNull
     @PersistenceContext
     private EntityManager entityManager;
     
     private String studentFirstName;
     private String studentLastName;
     private String studentAdress;
-   /*private String studentLocation;*/
-    private String studentBirthday;
-    private String studentPhone;
+   private String studentLocation;
+    private Date studentBirthday;
+    private Long studentPhone;
     private String studentEmail;
-   /* private String studentEducation;
-    private String studentSchool;
-    private String studentSchoolEndDate;*/
     private String studentFamilyState;
 
-    @Transactional
+	
+	@Transactional
     public String save() {
-        Student student = new Student(studentFirstName, studentLastName, studentAdress, studentBirthday, studentEmail,  studentPhone, /*, studentEducation, studentSchool, studentSchoolEndDate, */studentFamilyState/*, studentLocation*/ );
+        Student student = new Student(studentFirstName, studentLastName, studentAdress, studentLocation, studentBirthday, studentPhone, studentEmail,studentFamilyState );
         entityManager.persist(student);
         return "main";
     }
+	
+	
+	
     
-   /* public String getStudentLocation() {
+    public String  getStudentLocation() {
 		return studentLocation;
 	}
 
-	public void setStudentLocation(String studentLocation) {
+	public void setStudentLocation(String  studentLocation) {
 		this.studentLocation = studentLocation;
 	}
-*/
-	public String getStudentBirthday() {
+
+	public Date getStudentBirthday() {
 		return studentBirthday;
 	}
 
-	public void setStudentBirthday(String studentBirthday) {
+	public void setStudentBirthday(Date studentBirthday) {
 		this.studentBirthday = studentBirthday;
 	}
 
-	public String getStudentPhone() {
+	public Long getStudentPhone() {
 		return studentPhone;
 	}
 
-	public void setStudentPhone(String studentPhone) {
+	public void setStudentPhone(Long studentPhone) {
 		this.studentPhone = studentPhone;
 	}
 	
@@ -60,30 +64,6 @@ public class NewStudentBean {
 	public void setStudentEmail(String studentEmail) {
 		this.studentEmail = studentEmail;
 	}
-/*
-	public String getStudentEducation() {
-		return studentEducation;
-	}
-
-	public void setStudentEducation(String studentEducation) {
-		this.studentEducation = studentEducation;
-	}
-
-	public String getStudentSchool() {
-		return studentSchool;
-	}
-
-	public void setStudentSchool(String studentSchool) {
-		this.studentSchool = studentSchool;
-	}
-
-	public String getStudentSchoolEndDate() {
-		return studentSchoolEndDate;
-	}
-
-	public void setStudentSchoolEndDate(String studentSchoolEndDate) {
-		this.studentSchoolEndDate = studentSchoolEndDate;
-	}*/
 
 	public String getStudentFamilyState() {
 		return studentFamilyState;

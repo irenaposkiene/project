@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+    <h:head>
+        <title>Plan</title>
+        <h:outputStylesheet name="styles.css"/>
+    </h:head>
+
+    <h:body>
+    <h3>   Moksleivio mokymo planas(privalomieji dalykai)</h3>
+        <h:form id="tableActionForm">
+            <h:dataTable value="#{planListBean.planList}" var="plan">
+  
+       
+               <h:column>
+                    <f:facet name="header">
+                       Moksleivio vardas
+                    </f:facet>
+                    <h:outputText value="#{plan.name}"/>
+                </h:column>
+               
+                <h:column>
+                    <f:facet name="header">
+                         Moksleivio pavardė
+                    </f:facet>
+                    <h:outputText value="#{plan.surname}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">
+                        Tikyba
+                    </f:facet>
+                    <h:outputText value="#{plan.tikyba}"/>
+                </h:column>
+                      	   
+                 <h:column>
+                    <f:facet name="header">
+                       Etika
+                    </f:facet>
+                    <h:outputText value="#{plan.etika}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                       Lietuvių kalba ir literatūra (4)
+                    </f:facet>
+                    <h:outputText value="#{plan.lietkalba1}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                       Lietuvių kalba ir literatūra (6)
+                    </f:facet>
+                    <h:outputText value="#{plan.lietkalba2}"/>
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                       Gimtoji rusų
+                    </f:facet>
+                    <h:outputText value="#{plan.gimtojirusu}"/>
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                       Gimtoji lenkų
+                    </f:facet>
+                    <h:outputText value="#{plan.gimtojilenku}"/>
+                </h:column>
+                              
+                 <h:column>
+                    <f:facet name="header">
+                       Anglų kalba
+                    </f:facet>
+                    <h:outputText value="#{plan.angkalba}"/>
+                </h:column>
+                         
+                  <h:column>
+                    <f:facet name="header">
+                       Vokiečių kalba
+                    </f:facet>
+                    <h:outputText value="#{plan.vokkalba}"/>
+                 </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                       Plancūzų kalba
+                    </f:facet>
+                    <h:outputText value="#{plan.pranckalba}"/>
+                 </h:column>  
+                 
+                 
+                 <h:column>
+                    <f:facet name="header">
+                       Rusų kalba
+                    </f:facet>
+                    <h:outputText value="#{plan.rusukalba}"/>
+                 </h:column>  
+                 
+                 <h:column>
+                    <f:facet name="header">
+                       Biologija
+                    </f:facet>
+                    <h:outputText value="#{plan.biologija}"/>
+                 </h:column>        
+     			
+     			 <h:column>
+                    <f:facet name="header">
+                      Chemija
+                    </f:facet>
+                    <h:outputText value="#{plan.chemija}"/>
+                 </h:column>        
+    
+    			  <h:column>
+                    <f:facet name="header">
+                      Fizika
+                    </f:facet>
+                    <h:outputText value="#{plan.fizika}"/>
+                 </h:column>
+                 
+                   <h:column>
+                    <f:facet name="header">
+                      Gamtos mokslai
+                    </f:facet>
+                    <h:outputText value="#{plan.gamtosmokslai}"/>
+                 </h:column>        
+            
+      			<h:column>
+                    <f:facet name="header">
+                      Istorija
+                    </f:facet>
+                    <h:outputText value="#{plan.istorija}"/>
+                 </h:column>        
+            
+               <h:column>
+                    <f:facet name="header">
+                      Geografija
+                    </f:facet>
+                    <h:outputText value="#{plan.geografija}"/>
+                 </h:column> 
+                        
+              <h:column>
+                    <f:facet name="header">
+                      Socialiniai mokslai
+                    </f:facet>
+                    <h:outputText value="#{plan.socmokslai}"/>
+                </h:column>        
+                       
+              <h:column>
+                    <f:facet name="header">
+                      Matematika
+                    </f:facet>
+                    <h:outputText value="#{plan.matematika}"/>
+                </h:column>        
+                     
+              <h:column>
+                    <f:facet name="header">
+                    Kūno kultura
+                    </f:facet>
+                    <h:outputText value="#{plan.kkultura}"/>
+                </h:column>        
+            
+         
+              <h:column>
+                    <f:facet name="header">
+                   Futbolas
+                    </f:facet>
+                    <h:outputText value="#{plan.futbolas}"/>
+                </h:column>        
+            
+                   
+              <h:column>
+                    <f:facet name="header">
+                    Krepsinis
+                    </f:facet>
+                    <h:outputText value="#{plan.krepsinis}"/>
+                </h:column>        
+            
+             <h:column>
+                    <f:facet name="header">
+                        Actions
+                    </f:facet>
+                    <h:commandLink actionListener="#{planListBean.removePlan(plan)}" value="Ištrinti"/>
+                  
+                </h:column>
+                                  
+            </h:dataTable>
+        </h:form>
+                  <h:form id="actionForm">
+           
+                   <h:commandButton id="Grizti" action="main.xhtml" value="Grįžti"/>
+        
+                </h:form>
+        
+
+    </h:body>
+</html>

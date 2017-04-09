@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Student Education</title>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerEducationForm">
+            <h3>Add Student Education</h3>
+           
+     
+         
+             <table>
+               <tr>
+               <td><h:outputText value="Išsilavinimas:"/></td>
+			    <td> <h:selectOneMenu id="clientEducation" value="#{newEducationBean.educationEducation}"  required="false">
+                 <f:selectItem itemValue="---------------" itemLabel="-------------"/>
+                 	 <f:selectItem itemValue="Vidurinis 10 klasių" itemLabel="Vidurinis 10 klasių" />
+                    <f:selectItem itemValue="Vidurinis išsilavinimas" itemLabel="Vidurinis išsilavinimas" />
+                    <f:selectItem itemValue="Aukštasis išsilavinimas" itemLabel="Aukštasis išsilavinimas" />
+ 					<f:selectItem itemValue="Aukštenysis išsilavinimas" itemLabel="Aukštesnysis išsilavinimas" />
+                  </h:selectOneMenu></td></tr>
+               
+               <tr>
+               <td> <h:outputText value="Mokyklos pavadinimas :"/></td>
+               <td><h:inputText id="clientSchool" value="#{newEducationBean.educationSchool}"  required="false"/>
+                <h:message for="clientSchool"/> </td>
+               	</tr>
+               	
+				<tr>
+               <td> <h:outputText value="Mokyklos baigimo metai:"/></td>
+               <td><h:inputText id="clientSchoolEndDate" type="date" value="#{newEducationBean.educationSchoolEndDate}"> 
+              <f:convertDateTime pattern="yyyy-mm-dd" />
+				</h:inputText>
+               
+                <h:message for="clientSchoolEndDate"/> </td>
+				</tr>
+				
+				 <tr>
+				<td><h:outputText value="Įgyta specialybė :"/></td>
+                <td><h:inputText id="clientEducationSpecialization" value="#{newEducationBean.educationSpecialization}" required="false"/>
+                <h:message for="clientEducationSpecialization"/> </td>
+				</tr>
+			
+			    <tr>
+				<td><h:outputText value="Institucijos pavadinimas:"/></td>
+                <td><h:inputText id="educationInstitution" value="#{newEducationBean.educationInstitution}" required="false"/>
+                <h:message for="educationInstitution"/> </td>
+				</tr>
+				
+			    <tr>
+				<td><h:outputText value="Institucijos tipas:"/></td>
+                <td><h:inputText id="educationInstitutionType" value="#{newEducationBean.educationInstitutionType}" required="false"/>
+                <h:message for="educationInstitutionType"/> </td>
+				</tr>
+				
+				 <tr>
+				<td><h:outputText value="Baigimo metai:"/></td>
+                <td><h:inputText id="clienteducationInstitutionEndDate" value="#{newEducationBean.educationInstitutionEndDate}"> 
+                type="date" value="#{newEducationBean.educationSchoolEndDate}"> 
+              <f:convertDateTime pattern="yyyy-mm-dd" />
+				</h:inputText>
+                <h:message for="clienteducationInstitutionEndDate"/> </td>
+               </tr>
+             			
+				</table>
+				
+				
+            <h:commandButton action="#{newEducationBean.save()}" value="Išsaugoti"/>
+            <h:commandButton id="Grizti" action="main.xhtml" value="Grįžti"/>
+            
+        </h:form>
+    </h:body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+       xmlns:ui="http://java.sun.com/jsf/facelets">
+    
+    <h:head>
+        <title>Form</title>
+        <h:outputStylesheet name="styles.css"/>
+    </h:head>
+
+    <h:body>
+    <h3> Detaliau apie Prašymą </h3>
+        <h:form id="tableActionForm">
+            <h:dataTable value="#{formListBean.formList}" var="form">
+            
+               <h:column>
+                    <f:facet name="header">
+                       Prašymo data
+                    </f:facet>
+                    <h:outputText value="#{form.date}"/>
+                </h:column>
+               
+                <h:column>
+                    <f:facet name="header">
+                       Grupe
+                    </f:facet>
+                    <h:outputText value="#{form.gr}"/>
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Pakopa
+                    </f:facet>
+                    <h:outputText value="#{form.grSpec}"/>
+                </h:column>
+               
+                 <h:column>
+                    <f:facet name="header">
+                        Dokumentai
+                    </f:facet>
+                   <ol>
+                    <li><h:outputText value="#{form.dokValue[0]}"/></li>
+                    <li><h:outputText value="#{form.dokValue[1]}"/></li>
+                    <li><h:outputText value="#{form.dokValue[2]}"/></li>
+                    <li><h:outputText value="#{form.dokValue[3]}"/></li>
+                    <li><h:outputText value="#{form.dokValue[4]}"/></li>
+                    <li><h:outputText value="#{form.dokValue[5]}"/></li>
+                    
+                    
+                  </ol>
+                  
+                </h:column>
+                    	   
+                    	   
+                    	   
+                <h:column>
+                    <f:facet name="header">
+                        Actions
+                    </f:facet>
+                       <h:commandLink actionListener="#{formListBean.removeForm(form)}" value="Ištrinti"/>
+               </h:column>
+               
+                                    
+            </h:dataTable>
+        </h:form>
+
+       
+        
+                  <h:form id="actionForm">
+           
+                   <h:commandButton id="Grizti" action="main.xhtml" value="Grįžti"/>
+        
+                </h:form>
+ 
+    </h:body>
+</html>

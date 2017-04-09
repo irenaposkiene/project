@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+       xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Add Form Info</title>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerForm">
+            <h3>Prašymo duomenys</h3>
+    
+         
+             <table>
+               <tr>
+               <td><h:outputText value="Prašymo data:"/></td>
+               <td> <h:inputText id="clientFormDate" type="date" value="#{newFormBean.formDate}"  required="false">
+               <f:convertDateTime pattern="yyyy-mm-dd" />
+               </h:inputText>
+                <h:message for="clientFormDate"/> </td>
+                </tr> 
+                           
+               <tr>
+               <td><h:outputText value="Grupė:"/></td>
+               <td> <h:inputText id="clientFormGr" value="#{newFormBean.formGr}"  required="false"/>
+                <h:message for="clientFormGr"/> </td>
+               </tr> 
+               	
+				<tr>
+               <td><h:outputText value="Pakopa:"/></td>
+               <td> <h:inputText id="clientFormSpec" value="#{newFormBean.formGrSpec}"  required="false"/>
+                <h:message for="clientFormSpec"/> </td>
+                </tr> 
+                
+              	<tr>
+               <td><h:outputText value="Dokumentai:"/></td>
+               <td> 
+               
+				 <h:selectManyCheckbox id="clientFormDok" value="#{newFormBean.formDok}" required="false" >
+                	<f:selectItem itemValue="Išsilavinimo dokumentas" itemLabel="Išsilavinimo dokumentas" />
+                    <f:selectItem itemValue="Sveikatos pažymėjimas" itemLabel="Sveikatos pažymėjimas" />
+                    <f:selectItem itemValue="Nuotraukos" itemLabel="Nuotraukos 3X4 (2-4 vnt.)" />
+                    <f:selectItem itemValue="Paso kopija (ID kopija)" itemLabel="Paso kopija (Asmens tapatybės kortelės kopija)" />
+                    <f:selectItem itemValue="Šauktinio liudijimas" itemLabel="Šauktinio liudijimas" />
+                    <f:selectItem itemValue="Stojamasis mokestis" itemLabel="Stojamasis mokestis" />
+                 </h:selectManyCheckbox></td> </tr>
+                 
+                                 
+      			</table>
+				
+				
+            <h:commandButton action="#{newFormBean.save()}" value="Išsaugoti"/>
+            <h:commandButton id="Grizti" action="main.xhtml" value="Grįžti"/>
+      
+            
+        </h:form>
+    </h:body>
+</html>
