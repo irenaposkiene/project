@@ -6,7 +6,11 @@ import javax.persistence.PersistenceContext;
 import org.springframework.transaction.annotation.Transactional;
 
 import lt.vtvpmc.ems.pw.entities.Additional;
+<<<<<<< HEAD
 
+=======
+import lt.vtvpmc.ems.pw.entities.Application;
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
 
 public class NewAdditionalBean {
 

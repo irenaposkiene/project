@@ -16,11 +16,17 @@ public class Family  implements Serializable {
 		
 
 	/**
+<<<<<<< HEAD
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
 	
+=======
+    *
+    */
+   private static final long serialVersionUID = 1L;
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
 
    @Id
    @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -98,7 +104,17 @@ public class Family  implements Serializable {
 		this.fatherAdress = fatherAdress;
 	}
 
+<<<<<<< HEAD
 	
+=======
+	public String getFatherPhone() {
+		return fatherPhone;
+	}
+
+	public void setFatherPhone(String fatherPhone) {
+		this.fatherPhone = fatherPhone;
+	}
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
 
 	public String getMotherName() {
 		return motherName;
@@ -124,6 +140,16 @@ public class Family  implements Serializable {
 		this.motherAdress = motherAdress;
 	}
 
+<<<<<<< HEAD
+=======
+	public String getMotherPhone() {
+		return motherPhone;
+	}
+
+	public void setMotherPhone(String motherPhone) {
+		this.motherPhone = motherPhone;
+	}
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
 
 	public String getPatronName() {
 		return patronName;
@@ -149,6 +175,7 @@ public class Family  implements Serializable {
 		this.patronAdress = patronAdress;
 	}
 
+<<<<<<< HEAD
 	public String getFatherPhone() {
 		return fatherPhone;
 	}
@@ -165,6 +192,8 @@ public class Family  implements Serializable {
 		this.motherPhone = motherPhone;
 	}
 
+=======
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
 	public String getPatronPhone() {
 		return patronPhone;
 	}
@@ -173,8 +202,11 @@ public class Family  implements Serializable {
 		this.patronPhone = patronPhone;
 	}
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
 	
 
 }
