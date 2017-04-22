@@ -14,6 +14,38 @@
     
     <bean id="studentListBean" class="lt.vtvpmc.ems.pw.ui.StudentListBean" scope="request"/>
     
+    
+    <bean id="newEducationBean" class="lt.vtvpmc.ems.pw.ui.NewEducationBean" scope="request"/>
+    
+    <bean id="educationListBean" class="lt.vtvpmc.ems.pw.ui.EducationListBean" scope="request"/>
+     
+    
+    
+    <bean id="newFormBean" class="lt.vtvpmc.ems.pw.ui.NewFormBean" scope="request"/>
+    
+    <bean id="formListBean" class="lt.vtvpmc.ems.pw.ui.FormListBean" scope="request"/>
+    
+     
+    <bean id="newFamilyBean" class="lt.vtvpmc.ems.pw.ui.NewFamilyBean" scope="request"/>
+    
+    <bean id="familyListBean" class="lt.vtvpmc.ems.pw.ui.FamilyListBean" scope="request"/>
+    
+    
+    <bean id="newAdditionalBean" class="lt.vtvpmc.ems.pw.ui.NewAdditionalBean" scope="request"/>
+    
+    <bean id="additionalListBean" class="lt.vtvpmc.ems.pw.ui.AdditionalListBean" scope="request"/>
+    
+    
+    
+    <bean id="newPlanBean" class="lt.vtvpmc.ems.pw.ui.NewPlanBean" scope="request"/>
+    
+    <bean id="planListBean" class="lt.vtvpmc.ems.pw.ui.PlanListBean" scope="request"/>
+    
+    <bean id="newPapildBean" class="lt.vtvpmc.ems.pw.ui.NewPapildBean" scope="request"/>
+    
+    <bean id="papildListBean" class="lt.vtvpmc.ems.pw.ui.PapildListBean" scope="request"/>
+    
+    
 </beans>
 
 

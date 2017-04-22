@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Additional Info</title>
+        <h:outputStylesheet name="styles.css"/>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerApplicationInfo">
+            <h3>Papildoma informacija (anketa)</h3>
+           
+               
+             <table>
+             
+              
+                <tr>
+                <td><h:outputText value="Bendrabutis:"/></td>
+			    <td> <h:selectOneMenu id="clientHostel" value="#{newAdditionalBean.additionalHostel}"  required="true">
+                 <f:selectItem itemValue="---------------" itemLabel="-------------"/>
+                 	<f:selectItem itemValue="Taip" itemLabel="Taip" />
+                    <f:selectItem itemValue="Ne" itemLabel="Ne" />
+                    </h:selectOneMenu></td></tr>
+       
+              
+              <tr>
+               <td><h:outputText value="Iš kur sužinojote apie mūsų įstaigą?"/></td>
+               <td> <h:selectOneMenu id="clientHowknow" value="#{newAdditionalBean.additionalHowknow}"  required="true">
+                    <f:selectItem itemValue="---------------" itemLabel="-------------"/>
+                 	<f:selectItem itemValue="Iš draugų" itemLabel="Iš draugų" />
+                    <f:selectItem itemValue="Iš interneto" itemLabel="Iš interneto" />
+                    <f:selectItem itemValue="Iš leidinio “Kur stoti?" itemLabel="Iš leidinio “Kur stoti?" />
+                    <f:selectItem itemValue="Mokykloje" itemLabel="Mokykloje" />
+                     <f:selectItem itemValue="Iš reklamos" itemLabel="Iš reklamos" />
+                     <f:selectItem itemValue="Proforientacijos metu" itemLabel="Proforientacijos metu" />
+                     <f:selectItem itemValue="Kita" itemLabel="Kita" />
+                   </h:selectOneMenu></td></tr>
+               
+               <tr>
+              <td><h:outputText value="Ar atsiėmė dokumentus:"/></td>
+			    <td> <h:selectOneMenu id="clientRefuce" value="#{newAdditionalBean.additionalRefuce}"  required="true">
+                   <f:selectItem itemValue="---------------" itemLabel="-------------"/>
+                 	<f:selectItem itemValue="Taip" itemLabel="Taip" />
+                    <f:selectItem itemValue="Ne" itemLabel="Ne" />
+                    </h:selectOneMenu></td></tr>            
+             
+                			
+                
+				</table>
+				
+				
+            <h:commandButton action="#{newAdditionalBean.save()}" class="btn" value="Išsaugoti"/>
+            <h:commandButton id="Grizti" action="main.xhtml" class="btn2" value="Grįžti"/>
+        </h:form>
+    </h:body>
+</html>

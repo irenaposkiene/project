@@ -1,10 +1,18 @@
 package lt.vtvpmc.ems.pw.entities;
-
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Length;
+
 import java.io.Serializable;
+import java.util.Date;
+
 
 @Entity
 public class Student implements Serializable {
@@ -17,58 +25,123 @@ public class Student implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    
+   
+    @NotNull @Length(min=5, max=15)
     private String firstName;
-    
+    @NotNull @Length(min=5, max=30)  
     private String lastName;
 
     private String adress;
-    private String birthday;
-    private String phone;
+    
+    @Temporal(TemporalType.DATE)
+    private Date birthday;
+    private Long phone;
     private String email;
-  /* private String education;*/
-	/*private String location;*/
- /*   private String school;
-    private String schoolEndDate;*/
-    private String familyState;
+ 	private String location;
+	private String familyState;
+	  
+
+	@OneToOne 
+	public Education education;
+		
+	public Education getEducation() {
+		return education;
+	}
+
+	public void setEducation(Education education) {
+		this.education = education;
+	}
+
+	public Family getFamily() {
+		return family;
+	}
+
+	public void setFamily(Family family) {
+		this.family = family;
+	}
+
+	public Form getForm() {
+		return form;
+	}
+
+	public void setForm(Form form) {
+		this.form = form;
+	}
+
+	public Additional getAdditional() {
+		return additional;
+	}
+
+	public void setAdditional(Additional additional) {
+		this.additional = additional;
+	}
+
+	public Plan getPlan() {
+		return plan;
+	}
+
+	public void setPlan(Plan plan) {
+		this.plan = plan;
+	}
+
+	public Papild getPapild() {
+		return papild;
+	}
+
+	public void setPapild(Papild papild) {
+		this.papild = papild;
+	}
+
+	@OneToOne 
+	public Family family;
+		
+	@OneToOne 
+	public Form form;
+	
+	@OneToOne 
+	public Additional additional;
+	
+	@OneToOne 
+	public Plan plan;
+	
+	@OneToOne 
+	public Papild papild;
+	
     
-    
-    public Student(String firstName, String lastName, String adress, String birthday,String phone, String email, /*String education, String school,*/ /*String schoolEndDate, */String familyState/*, String location */) {
+    public Student(String firstName, String lastName, String adress,String location, Date birthday,Long phone, String email,  String familyState ) {
         this.firstName = firstName;
         this.lastName = lastName;
-     /*   this.location=location;*/
+        this.location=location;
         this.adress = adress;
        this.birthday = birthday;
-      /*  this.education =education;*/
         this.email=email;
         this.familyState = familyState;
         this.phone = phone;
- /*     this.school= school;*/
-    /*    this.schoolEndDate =schoolEndDate;*/
+
       
     }
 
-   /* public String getLocation() {
+   public String getLocation() {
 		return location;
 	}
 
-	public void setLocation(String location) {
+	public void setLocation(String  location) {
 		this.location = location;
 	}
-*/
-	public String getBirthday() {
+
+	public Date getBirthday() {
 		return birthday;
 	}
 
-	public void setBirthday(String birthday) {
+	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
 	}
 
-	public String getPhone() {
+	public Long getPhone() {
 		return phone;
 	}
 
-	public void setPhone(String phone) {
+	public void setPhone(Long phone) {
 		this.phone = phone;
 	}
 
@@ -79,30 +152,6 @@ public class Student implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-/*
-	public String getEducation() {
-		return education;
-	}
-
-	public void setEducation(String education) {
-		this.education = education;
-	}
-
-	public String getSchool() {
-		return school;
-	}
-
-	public void setSchool(String school) {
-		this.school = school;
-	}*/
-
-/*	public String getSchoolEndDate() {
-		return schoolEndDate;
-	}
-
-	public void setSchoolEndDate(String schoolEndDate) {
-		this.schoolEndDate = schoolEndDate;
-	}*/
 
 	public String getFamilyState() {
 		return familyState;

@@ -13,10 +13,11 @@ public class StudentListBean {
     
     @PersistenceContext
     private EntityManager entityManager;
+   
     
-    @Transactional(readOnly = true)
+    @Transactional
     public List<?> getStudentList() {
-        Query query = entityManager.createQuery("select c from Student c");
+    	Query query = entityManager.createQuery("select c from Student c");
         return query.getResultList();
     }
     
@@ -24,5 +25,7 @@ public class StudentListBean {
     public void removeStudent(Student student) {
         entityManager.remove(entityManager.merge(student));
     }
+    
+   
     
 }

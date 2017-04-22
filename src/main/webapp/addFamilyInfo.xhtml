@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Family Info</title>
+        <h:outputStylesheet name="styles.css"/>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerEducationForm">
+            <h3>Duomenys apie tėvus/globėjus</h3>
+    
+         
+             <table>
+               <tr>
+               <td><h:outputText value="Tėvo vardas:"/></td>
+               <td> <h:inputText id="clientFatherName" value="#{newFamilyBean.familyFatherName}"  required="false"/>
+                <h:message for="clientFatherName"/> </td>
+                </tr> 
+              
+             
+               <tr>
+               <td><h:outputText value="Tėvo pavardė:"/></td>
+               <td> <h:inputText id="clientFatherSurname" value="#{newFamilyBean.familyFatherSurname}"  required="false"/>
+                <h:message for="clientFatherSurname"/> </td>
+               </tr> 
+               	
+				<tr>
+               <td><h:outputText value="Tėvo adresas:"/></td>
+               <td> <h:inputText id="clientFatherAdress" value="#{newFamilyBean.familyFatherAdress}"  required="false"/>
+                <h:message for="clientFatherAdress"/> </td>
+                </tr> 
+                
+               <tr>
+               <td><h:outputText value="Tėvo telefonas:"/></td>
+               <td> <h:inputText id="clientFatherPhone" value="#{newFamilyBean.familyFatherPhone}"  required="false"/>
+                <h:message for="clientFatherPhone"/> </td>
+              </tr>  
+                
+	
+				 <tr>
+               <td><h:outputText value="Motinos vardas:"/></td>
+               <td> <h:inputText id="clientMotherName" value="#{newFamilyBean.familyMotherName}"  required="false"/>
+                <h:message for="clientMotherName"/> </td>
+                </tr> 
+              
+             
+               <tr>
+               <td><h:outputText value="Motinos pavardė:"/></td>
+               <td> <h:inputText id="clientMotherSurname" value="#{newFamilyBean.familyMotherSurname}"  required="false"/>
+                <h:message for="clientMotherSurname"/> </td>
+               </tr> 
+               	
+				<tr>
+               <td><h:outputText value="Motinos adresas:"/></td>
+               <td> <h:inputText id="clientMotherAdress" value="#{newFamilyBean.familyMotherAdress}"  required="false"/>
+                <h:message for="clientMotherAdress"/> </td>
+                </tr> 
+                
+               <tr>
+               <td><h:outputText value="Motinos telefonas:"/></td>
+               <td> <h:inputText id="clientMotherPhone" value="#{newFamilyBean.familyMotherPhone}"  required="false"/>
+                <h:message for="clientMotherPhone"/> </td>
+              </tr>  
+              
+              
+               <tr>
+               <td><h:outputText value="Globėjo/os vardas:"/></td>
+               <td> <h:inputText id="clientPatronName" value="#{newFamilyBean.familyPatronName}"  required="false"/>
+                <h:message for="clientPatronName"/> </td>
+                </tr> 
+              
+             
+               <tr>
+               <td><h:outputText value="Globėjo/os pavardė:"/></td>
+               <td> <h:inputText id="clientPatronSurname" value="#{newFamilyBean.familyPatronSurname}"  required="false"/>
+                <h:message for="clientPatronSurname"/> </td>
+               </tr> 
+               	
+				<tr>
+               <td><h:outputText value="Globėjo/os adresas:"/></td>
+               <td> <h:inputText id="clientPatronAdress" value="#{newFamilyBean.familyPatronAdress}"  required="false"/>
+                <h:message for="clientPatronAdress"/> </td>
+                </tr> 
+                
+               <tr>
+               <td><h:outputText value="Globėjo/os telefonas:"/></td>
+               <td> <h:inputText id="clientPatronPhone" value="#{newFamilyBean.familyPatronPhone}"  required="false"/>
+                <h:message for="clientPatronPhone"/> </td>
+              </tr>  
+              		       
+    
+              
+			</table>
+				
+				
+            <h:commandButton action="#{newFamilyBean.save()}" class="btn" value="Išsaugoti"/>
+            <h:commandButton id="Grizti" action="main.xhtml" class="btn2" value="Grįžti"/>
+      
+            
+        </h:form>
+    </h:body>
+</html>

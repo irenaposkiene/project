@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Study Plan</title>
+        <h:outputStylesheet name="styles.css"/>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerplanForm">
+            <h3>Privalomieji bendrojo ugdymo branduolio dalykai</h3>
+           
+     
+             <table>
+               <tr>
+               <td><h:outputText value="Vardas:"/></td>
+               <td> <h:inputText id="clientPlanName" value="#{newPlanBean.planName}"  required="false"/>
+                <h:message for="clientPlanName"/> </td>
+                </tr> 
+            	
+            	<tr>
+               <td><h:outputText value="Pavardė:"/></td>
+               <td> <h:inputText id="clientPlanSurname" value="#{newPlanBean.planSurname}"  required="false"/>
+                <h:message for="clientPlanSurname"/> </td>
+                </tr> 
+             	
+             	<tr>
+               <td><h:outputText value="Tikyba:"/></td>
+               <td> <h:inputText id="clientPlanTikyba" value="#{newPlanBean.planTikyba}"  required="false"/>
+                <h:message for="clientPlanTikyba"/> </td>
+                </tr> 
+             
+              	<tr>
+               <td><h:outputText value="Etika:"/></td>
+               <td> <h:inputText id="clientPlanEtika" value="#{newPlanBean.planEtika}"  required="false"/>
+                <h:message for="clientPlanEtika"/> </td>
+                </tr> 
+                
+                <tr>
+               <td><h:outputText value="Lietuvių kalba1:"/></td>
+               <td> <h:inputText id="clientPlanLietkalba1" value="#{newPlanBean.planLietkalba1}"  required="false"/>
+                <h:message for="clientPlanLietkalba1"/> </td>
+                </tr> 
+             		
+             	 <tr>
+               <td><h:outputText value="Lietuvių kalba2:"/></td>
+               <td> <h:inputText id="clientPlanLietkalba2" value="#{newPlanBean.planLietkalba2}"  required="false"/>
+                <h:message for="clientPlanLietkalba2"/> </td>
+                </tr> 	
+             		
+              <tr>
+               <td><h:outputText value="Gimtoji Rusų:"/></td>
+               <td> <h:inputText id="clientPlanGimtojirusu" value="#{newPlanBean.planGimtojirusu}"  required="false"/>
+                <h:message for="clientPlanGimtojirusu"/> </td>
+              </tr> 
+              
+                <tr>
+               <td><h:outputText value="Gimtoji Lenkų:"/></td>
+               <td> <h:inputText id="clientPlanGimtojilenku" value="#{newPlanBean.planGimtojilenku}"  required="false"/>
+                <h:message for="clientPlanGimtojilenku"/> </td>
+              </tr>  
+              
+                <tr>
+               <td><h:outputText value="Anglų kalba:"/></td>
+               <td> <h:inputText id="clientPlanAngkalba" value="#{newPlanBean.planAngkalba}"  required="false"/>
+                <h:message for="clientPlanAngkalba"/> </td>
+              </tr>  
+              
+                <tr>
+               <td><h:outputText value="Vokiečių kalba:"/></td>
+               <td> <h:inputText id="clientPlanVokkalba" value="#{newPlanBean.planVokkalba}"  required="false"/>
+                <h:message for="clientPlanVokkalba"/> </td>
+              </tr>  
+              
+                <tr>
+               <td><h:outputText value="Prancūzų kalba:"/></td>
+               <td> <h:inputText id="clientPlanPranckalba" value="#{newPlanBean.planPranckalba}"  required="false"/>
+                <h:message for="clientPlanPranckalba"/> </td>
+              </tr>  
+              
+               <tr>
+               <td><h:outputText value="Rusų kalba:"/></td>
+               <td> <h:inputText id="clientPlanRusukalba" value="#{newPlanBean.planRusukalba}"  required="false"/>
+                <h:message for="clientPlanRusukalba"/> </td>
+              </tr>  
+                
+     
+               <tr>
+               <td><h:outputText value="Biologija:"/></td>
+               <td> <h:inputText id="clientPlanBiologija" value="#{newPlanBean.planBiologija}"  required="false"/>
+                <h:message for="clientPlanBiologija"/> </td>
+              </tr>  
+              
+              
+               <tr>
+               <td><h:outputText value="Chemija:"/></td>
+               <td> <h:inputText id="clientPlanChemija" value="#{newPlanBean.planChemija}"  required="false"/>
+                <h:message for="clientPlanChemija"/> </td>
+              </tr>  
+              
+               <tr>
+               <td><h:outputText value="Fizika:"/></td>
+               <td> <h:inputText id="clientPlanFizika" value="#{newPlanBean.planFizika}"  required="false"/>
+                <h:message for="clientPlanFizika"/> </td>
+              </tr>  
+              
+               <tr>
+               <td><h:outputText value="Gamtos mokslai:"/></td>
+               <td> <h:inputText id="clientPlanGamtosmokslai" value="#{newPlanBean.planGamtosmokslai}"  required="false"/>
+                <h:message for="clientPlanGamtosmokslai"/> </td>
+              </tr> 
+               
+              
+               <tr>
+               <td><h:outputText value="Istorija:"/></td>
+               <td> <h:inputText id="clientPlanIstorija" value="#{newPlanBean.planIstorija}"  required="false"/>
+                <h:message for="clientPlanIstorija"/> </td>
+              </tr>  
+              
+               <tr>
+               <td><h:outputText value="Geografija:"/></td>
+               <td> <h:inputText id="clientPlanGeografija" value="#{newPlanBean.planGeografija}"  required="false"/>
+                <h:message for="clientPlanGeografija"/> </td>
+              </tr>  
+              
+   				<tr>
+               <td><h:outputText value="Socialiniai mokslai:"/></td>
+               <td> <h:inputText id="clientPlanSocmokslai" value="#{newPlanBean.planSocmokslai}"  required="false"/>
+                <h:message for="clientPlanSocmokslai"/> </td>
+              </tr> 
+              	
+              	<tr>
+               <td><h:outputText value="Matematika:"/></td>
+               <td> <h:inputText id="clientPlanMatematika" value="#{newPlanBean.planMatematika}"  required="false"/>
+                <h:message for="clientPlanMatematika"/> </td>
+              </tr> 
+              
+              <tr>
+               <td><h:outputText value="Kūno kultūra:"/></td>
+               <td> <h:inputText id="clientPlanKkultura" value="#{newPlanBean.planKkultura}"  required="false"/>
+                <h:message for="clientPlanKkultura"/> </td>
+              </tr> 
+              	
+    			<tr>
+               <td><h:outputText value="Futbolas:"/></td>
+               <td> <h:inputText id="clientPlanFutbolas" value="#{newPlanBean.planFutbolas}"  required="false"/>
+                <h:message for="clientPlanFutbolas"/> </td>
+              </tr> 
+              
+              
+                <tr>
+               <td><h:outputText value="Krepšinis:"/></td>
+               <td> <h:inputText id="clientPlanKrepsinis" value="#{newPlanBean.planKrepsinis}"  required="false"/>
+                <h:message for="clientPlanKrepsinis"/> </td>
+              </tr> 
+             			
+				</table>
+				
+				
+            <h:commandButton action="#{newPlanBean.save()}" class="btn" value="Išsaugoti"/>
+            <h:commandButton id="Grizti" action="main.xhtml" class="btn2" value="Grįžti"/>
+           
+        </h:form>
+    </h:body>
+</html>

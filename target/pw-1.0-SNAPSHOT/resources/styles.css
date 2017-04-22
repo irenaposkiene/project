@@ -1,21 +1,90 @@
-
 body {
-    padding: 14px;
+    padding: 14px;    
+    background-color: #e8edf3;
 }
 
+
+#container {
+	border: 2px solid grey;
+	border-radius: 5px;
+	background-color: #e9ece5;
+	 padding: 15px;
+	
+}
+
+.first {
+	text-align: center;
+	padding: 14px;
+	
+}
+
+h3 {
+	font-family: Gill Sans Extrabold, sans-serif;
+}
+
+.firscont {
+	
+}
+
+h3 {
+	text-align: center;
+	padding: 5px;
+	font-size: 22px;
+}
 table {
     width: 100%;
+   
 }
 
 table tr:nth-child(even) {
-    background-color: #f0f0f0;
+    background-color: #FFFFFF;
+    
 }
 
 table tr td,th {
     margin: 0px;
     border: 0px;
+    padding: 5px;
+    
 }
 
 table tr th {
-    border-bottom: 2px solid black;
+	background-color: #1ab188;
+    
+    text-align: center;
+    color: white;
+    padding: 10px;
+border-radius: 3px;
+    
+}
+
+.btn {
+	
+	outline:none;
+  	padding:6px; 
+  	background-color: #009974;
+  	text-transform:uppercase;
+  	letter-spacing:.1em;
+  	border-radius: 3px;
+  	color: white;
+  	position:relative;
+  	text-size: 8px;
+  	
+  	
+	
+}
+
+
+
+.btn2 {
+	background-color: #3b3a36;
+	outline:none;
+  	padding:6px; 
+  	text-transform:uppercase;
+  	letter-spacing:.1em;
+  	border-radius: 3px;
+  	color: white;
+  	position:relative;
+  	margin-top: 10px;
+  	
 }
