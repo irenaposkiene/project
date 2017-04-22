@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Add Application Info</title>
+    </h:head>
+    
+    <h:body>
+        <h:form id="newCustomerApplicationInfo">
+<<<<<<< HEAD
+            <h3>Informacija apie prašymą</h3>
+=======
+            <h3>Add Application Info</h3>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+           
+         
+             <table>
+             
+              <tr>
+<<<<<<< HEAD
+               <td><h:outputText value="Prašymo Nr:"/></td>
+               <td> <h:inputText id="clientApplicationNr" value="#{newApplicationBean.applicationNr}" />
+=======
+               <td><h:outputText value="Application Nr:"/></td>
+               <td> <h:inputText id="clientApplicationNr" value="#{newApplicationBean.applicationNr}"  required="true"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+                <h:message for="clientApplicationNr"/> </td>
+                </tr> 
+              
+               <tr>
+<<<<<<< HEAD
+               <td><h:outputText value="Prašymo Data:"/></td>
+               <td> <h:inputText id="clientApplicationDate" value="#{newApplicationBean.applicationDate}"  />
+=======
+               <td><h:outputText value="Application Date:"/></td>
+               <td> <h:inputText id="clientApplicationDate" value="#{newApplicationBean.applicationDate}"  required="true"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+                <h:message for="clientApplicationDate"/> </td>
+                </tr> 
+              
+             
+              <tr>
+<<<<<<< HEAD
+               <td><h:outputText value="Grupė:"/></td>
+               <td> <h:inputText id="clientApplicationGroup" value="#{newApplicationBean.applicationGroup}" />
+=======
+               <td><h:outputText value="Application Group:"/></td>
+               <td> <h:inputText id="clientApplicationGroup" value="#{newApplicationBean.applicationGroup}"  required="true"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+                <h:message for="clientApplicationGroup"/> </td>
+                </tr> 
+              
+               <tr>
+<<<<<<< HEAD
+               <td><h:outputText value="Pakopa:"/></td>
+               <td> <h:inputText id="clientApplicationGroupId" value="#{newApplicationBean.applicationGroupId}"  />
+                <h:message for="clientApplicationGroupId"/> </td>
+               </tr> 
+              
+            <tr>
+               <td><h:outputText value="Dokumentai:"/></td>
+			    <td>  <h:selectManyCheckbox id="clientApplicationDok" value="#{newApplicationBean.applicationDok}"  >
+                	<f:selectItem itemValue="Išsilavinimo dokumentas" itemLabel="Išsilavinimo dokumentas" />
+                    <f:selectItem itemValue="Sveikatos pažymėjimas" itemLabel="Sveikatos pažymėjimas" />
+                    <f:selectItem itemValue="Nuotraukos" itemLabel="Nuotraukos 3X4 (2-4 vnt.)" />
+                    <f:selectItem itemValue="Paso kopija (ID kopija)" itemLabel="Paso kopija (tapatybės kortelės kopija)" />
+                    <f:selectItem itemValue="Šauktinio liudijimas" itemLabel="Šauktinio liudijimas" />
+                    <f:selectItem itemValue="Stojamasis mokestis" itemLabel="Stojamasis mokestis" />
+                 </h:selectManyCheckbox></td> </tr>
+				</table>
+				
+              
+				
+				
+            <h:commandButton action="#{newApplicationBean.save()}" value="Išsaugoti"/>
+            <h:commandButton id="Grizti" action="main.xhtml" value="Grįžti"/>
+      
+=======
+               <td><h:outputText value="Application Group Id:"/></td>
+               <td> <h:inputText id="clientApplicationGroupId" value="#{newApplicationBean.applicationGroupId}"  required="true"/>
+                <h:message for="clientApplicationGroupId"/> </td>
+               </tr> 
+              
+             			
+				</table>
+				
+				
+            <h:commandButton action="#{newApplicationBean.save()}" value="Add"/>
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+        </h:form>
+    </h:body>
+</html>

@@ -16,11 +16,23 @@ public class Family  implements Serializable {
 		
 
 	/**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
 	
+<<<<<<< HEAD
+=======
+=======
+    *
+    */
+   private static final long serialVersionUID = 1L;
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 
    @Id
    @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -98,7 +110,21 @@ public class Family  implements Serializable {
 		this.fatherAdress = fatherAdress;
 	}
 
+<<<<<<< HEAD
 	
+=======
+<<<<<<< HEAD
+	
+=======
+	public String getFatherPhone() {
+		return fatherPhone;
+	}
+
+	public void setFatherPhone(String fatherPhone) {
+		this.fatherPhone = fatherPhone;
+	}
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 
 	public String getMotherName() {
 		return motherName;
@@ -124,6 +150,19 @@ public class Family  implements Serializable {
 		this.motherAdress = motherAdress;
 	}
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+	public String getMotherPhone() {
+		return motherPhone;
+	}
+
+	public void setMotherPhone(String motherPhone) {
+		this.motherPhone = motherPhone;
+	}
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 
 	public String getPatronName() {
 		return patronName;
@@ -149,6 +188,10 @@ public class Family  implements Serializable {
 		this.patronAdress = patronAdress;
 	}
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 	public String getFatherPhone() {
 		return fatherPhone;
 	}
@@ -165,6 +208,11 @@ public class Family  implements Serializable {
 		this.motherPhone = motherPhone;
 	}
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 	public String getPatronPhone() {
 		return patronPhone;
 	}
@@ -173,8 +221,16 @@ public class Family  implements Serializable {
 		this.patronPhone = patronPhone;
 	}
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 	
 
 }

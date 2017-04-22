@@ -26,6 +26,14 @@ public class StudentListBean {
         entityManager.remove(entityManager.merge(student));
     }
     
+<<<<<<< HEAD
    
+=======
+<<<<<<< HEAD
+   
+=======
+    
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
     
 }

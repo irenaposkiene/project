@@ -5,6 +5,25 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.transaction.annotation.Transactional;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+import lt.vtvpmc.ems.pw.entities.Application;
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 import lt.vtvpmc.ems.pw.entities.Family;
 
 public class NewFamilyBean {

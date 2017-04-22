@@ -43,6 +43,13 @@
                 </h:column>
                 
                  <h:column>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
                   
                     <f:facet name="header">
                         Savivaldybė
@@ -51,9 +58,74 @@
                 </h:column>
              
                                              
+<<<<<<< HEAD
                 <h:column>
                     <f:facet name="header">
                         Moksleivio telefonas
+=======
+<<<<<<< HEAD
+                <h:column>
+                    <f:facet name="header">
+                        Moksleivio telefonas
+=======
+=======
+<<<<<<< HEAD
+                  
+=======
+<<<<<<< HEAD
+                  
+=======
+<<<<<<< HEAD
+                  
+=======
+<<<<<<< HEAD
+                  
+=======
+<<<<<<< HEAD
+                  
+=======
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
+                    <f:facet name="header">
+                        Location
+                    </f:facet>
+                    <h:outputText value="#{student.location}"/>
+                </h:column>
+<<<<<<< HEAD
+             
+                                             
+=======
+<<<<<<< HEAD
+             
+                                             
+=======
+<<<<<<< HEAD
+             
+                                             
+=======
+<<<<<<< HEAD
+             
+                                             
+=======
+<<<<<<< HEAD
+             
+                                             
+=======
+                        
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+                <h:column>
+                    <f:facet name="header">
+                        Moksleivio adresas
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
                     </f:facet>
                     <h:outputText value="#{student.phone}"/>
                 </h:column>
@@ -66,12 +138,25 @@
                 </h:column>
                 <h:column>
                     <f:facet name="header">
+<<<<<<< HEAD
                        Moksleivio šeimyminė padėtis
+=======
+<<<<<<< HEAD
+                       Moksleivio šeimyminė padėtis
+=======
+<<<<<<< HEAD
+                       Moksleivio šeimyminė padėtis
+=======
+                        Family State
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
                    </f:facet>
                     <h:outputText value="#{student.familyState}"/>
                 </h:column>			
            	    
                         
+<<<<<<< HEAD
                 <h:column>
                     <f:facet name="header">
                         Ištrinti
@@ -173,6 +258,316 @@
              
 </h:form> 
         
+=======
+<<<<<<< HEAD
+                <h:column>
+                    <f:facet name="header">
+                        Ištrinti
+                    </f:facet>
+                    <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Ištrinti"/>
+                    
+               </h:column>
+               
+                 <h:column>
+                    <f:facet name="header">
+                       Informacija apie moksleivį
+                    </f:facet>
+                    
+                   <h:form id="educationForm">
+           			 <h:commandButton id="addStudentEducationBtn" action="addStudentEducation" value="Išsilavinimo informacija"/>
+      			     <h:commandButton id="addFamilyBtn" action="addFamilyInfo" value="Šeimos informacija"/>         
+      				  <h:commandButton id="addAdditionalBtn" action="addAdditional" value="Papildoma informacija"/>
+         			  <h:commandButton id="addFormBtn" action="addFormInfo" value="Prašymo informacija"/>
+         
+      			  </h:form>
+      			
+      			  
+                </h:column>
+                           
+            </h:dataTable>
+        </h:form>
+        
+          <h:form id="actionForm">
+=======
+<<<<<<< HEAD
+                <h:column>
+                    <f:facet name="header">
+                        Ištrinti
+                    </f:facet>
+                    <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Ištrinti"/>
+                    
+               </h:column>
+               
+                <h:column>
+                    <f:facet name="header">
+                       Išsilavinimas
+                    </f:facet>
+                    
+                   <h:form id="educationForm">
+           			 <h:commandButton id="addStudentEducationBtn" action="addStudentEducation" value="Išsilavinimo informacija"/>
+      			  </h:form>
+                    
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Šeimyninė padėtis
+                    </f:facet>
+                  <h:commandButton id="addFamilyBtn" action="addFamilyInfo" value="Šeimos informacija"/>
+         
+                 </h:column>
+        		                
+                 <h:column>
+                    <f:facet name="header">
+                        Papildoma informacija
+                    </f:facet>
+                  <h:commandButton id="addAdditionalBtn" action="addAdditional" value="Papildoma informacija"/>
+         
+                 </h:column>
+                          
+=======
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+                <h:column>
+                    <f:facet name="header">
+                        Moksleivio mokymo planas(privalomieji dalykai)
+                    </f:facet>
+<<<<<<< HEAD
+                  <h:commandButton id="addStudyPlanBtn" action="addStudyPlan" value="Pridėti privalomus mokymo plano dalykus "/>
+      
+                 </h:column>
+                 
+                   <h:column>
+                    <f:facet name="header">
+                        Moksleivio mokymo planas(pasirenkamieji dalykai)
+                    </f:facet>
+                  <h:commandButton id="addStudyPlanPapildBtn" action="addPapildPlan" value="Pridėti pasirenkamuosius mokymo plano dalykus"/>
+      
+                 </h:column>    
+                 
+                  
+                 <h:column>
+                    <f:facet name="header">
+                        Prašymo informacija
+                    </f:facet>
+                  <h:commandButton id="addApplicationBtn" action="addApplicationInfo" value="Prašymo informacija"/>
+         
+                 </h:column>
+                              
+                        
+=======
+                    <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Delete"/>
+                    
+<<<<<<< HEAD
+               </h:column>
+               
+                <h:column>
+=======
+<<<<<<< HEAD
+               </h:column>
+               
+                <h:column>
+=======
+<<<<<<< HEAD
+               </h:column>
+               
+                <h:column>
+=======
+<<<<<<< HEAD
+               </h:column>
+               
+                <h:column>
+=======
+<<<<<<< HEAD
+                    <h:commandButton action="#{newApplicationBean.save()}" value="Application Info"/>
+       
+                    
+                      </h:column>
+                
+                
+                  <h:column>
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
+                    <f:facet name="header">
+                        Education
+                    </f:facet>
+                    
+                   <h:form id="educationForm">
+           			 <h:commandButton id="addStudentEducationBtn" action="addStudentEducation" value="Add Student Education"/>
+      			  </h:form>
+                    
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Family
+                    </f:facet>
+                  <h:commandButton id="addFamilyBtn" action="addFamilyInfo" value="Add Family Info"/>
+         
+                 </h:column>
+        		 
+        		 
+                 <h:column>
+                    <f:facet name="header">
+                        Application
+                    </f:facet>
+                  <h:commandButton id="addApplicationBtn" action="addApplicationInfo" value="Add Application Info"/>
+         
+                 </h:column>
+                          
+               
+                 <h:column>
+                    <f:facet name="header">
+                        Additional Info
+                    </f:facet>
+                  <h:commandButton id="addAdditionalBtn" action="addAdditional" value="Add Additional Info"/>
+         
+                 </h:column>
+                          
+                <h:column>
+                    <f:facet name="header">
+                        Student Study Plan
+                    </f:facet>
+                  <h:commandButton id="addStudyPlanBtn" action="addStudyPlan" value="Add Study Plan"/>
+      
+                 </h:column>
+<<<<<<< HEAD
+                 
+                   <h:column>
+                    <f:facet name="header">
+                        Student Study Plan Special
+                    </f:facet>
+                  <h:commandButton id="addStudyPlanPapildBtn" action="addPapildPlan" value="Add Study Plan Papild"/>
+      
+                 </h:column>        
+                        
+=======
+                          
+                        
+=======
+<<<<<<< HEAD
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Family
+                    </f:facet>
+                  <h:commandButton id="addFamilyBtn" action="addFamilyInfo" value="Add Family Info"/>
+         
+                 </h:column>
+        		 
+        		 
+                 <h:column>
+                    <f:facet name="header">
+                        Application
+                    </f:facet>
+                  <h:commandButton id="addApplicationBtn" action="addApplicationInfo" value="Add Application Info"/>
+         
+                 </h:column>
+                          
+               
+                 <h:column>
+                    <f:facet name="header">
+                        Additional Info
+                    </f:facet>
+                  <h:commandButton id="addAdditionalBtn" action="addAdditional" value="Add Additional Info"/>
+         
+                 </h:column>
+                          
+               
+                        
+=======
+<<<<<<< HEAD
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Family
+                    </f:facet>
+                  <h:commandButton id="addFamilyBtn" action="addFamilyInfo" value="Add Family Info"/>
+         
+                 </h:column>
+        		 
+        		 
+                 <h:column>
+                    <f:facet name="header">
+                        Application
+                    </f:facet>
+                  <h:commandButton id="addApplicationBtn" action="addApplicationInfo" value="Add Application Info"/>
+         
+                 </h:column>
+                          
+               
+                        
+=======
+                </h:column>
+                
+              
+=======
+                    
+                </h:column>
+                  <h:column>
+                    <f:facet name="header">
+                        Education
+                    </f:facet>
+                   <h:form id="educationForm">
+            <h:commandButton id="addStudentEducationBtn" action="addStudentEducation" value="Add Student Education"/>
+        </h:form>
+                    
+                </h:column>
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
+                
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+            </h:dataTable>
+        </h:form>
+
+        <h:form id="actionForm">
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+            <h:commandButton id="addNewStudentBtn" action="addNewStudent" value="Pridėti moksleivį"/>
+        </h:form>
+        
+       
+<<<<<<< HEAD
+          <h:form id="tableActionForm2">
+           
+          <h3> Moksleivio mokymo plano sudarymas</h3>
+           
+        		                
+              
+                <h:column>
+                    <f:facet name="header">
+                        Moksleivio mokymo planas(privalomieji dalykai)
+                    </f:facet>
+                  <h:commandButton id="addStudyPlanBtn" action="addStudyPlan" value="Pridėti privalomus mokymo plano dalykus "/>
+      
+                 </h:column>
+                 
+                   <h:column>
+                    <f:facet name="header">
+                        Moksleivio mokymo planas(pasirenkamieji dalykai)
+                    </f:facet>
+                  <h:commandButton id="addStudyPlanPapildBtn" action="addPapildPlan" value="Pridėti pasirenkamuosius mokymo plano dalykus"/>
+      
+                 </h:column>    
+                 
+                  
+               
+             </h:form>     
+
+      
+=======
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
  
     </h:body>
 </html>

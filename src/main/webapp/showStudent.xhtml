@@ -8,6 +8,7 @@
     </h:head>
     
     <h:body>
+<<<<<<< HEAD
         <h:form id="newCustomerForm">
             <h3>Moksleivio paieška</h3>
             <h:panelGrid columns="3">
@@ -18,6 +19,31 @@
                 <h:outputText value="Pavardė:"/>
                 <h:inputText id="clientSurname" value="#{newStudentBean.studentLastName}" required="true"/>
                 <h:message for="clientSurname"/>
+=======
+      <h3> Moksleivių priėmimo registracijos sistema</h3>
+        <h:form id="tableActionForm">
+            <h:dataTable value="#{studentListBean.studentList}" var="student">
+                <h:column>
+                    <f:facet name="header">
+                        First Name
+                    </f:facet>
+                    <h:outputText value="#{student.firstName}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        Last Name
+                    </f:facet>
+                    <h:outputText value="#{student.lastName}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        Actions
+                    </f:facet>
+                    <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Delete"/>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 
             </h:panelGrid>
             <h:commandButton action="#{newStudentBean.find()}" class="btn2" value="Paieska"/>

@@ -27,23 +27,58 @@
 				</tr>
 				<tr>
                <td> <h:outputText value="Gimimo data:"/></td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
                <td><h:inputText id="clientBirthday" type="date" value="#{newStudentBean.studentBirthday}"> 
               <f:convertDateTime pattern="yyyy-MM-dd" />
 				</h:inputText>
                 <h:message for="clientBirthday"/>* privalomas laukas</td>
                 
 
+<<<<<<< HEAD
 				</tr>
 				 <tr>
 				<td><h:outputText value="Adresas:"/></td>
                 <td><h:inputText id="clientAdress" type="text" value="#{newStudentBean.studentAdress}" required="false"/>
                 <h:message for="clientAdress"/>* gyvenamoji vieta </td>
 				</tr>
+=======
+				</tr>
+				 <tr>
+				<td><h:outputText value="Adresas:"/></td>
+                <td><h:inputText id="clientAdress" type="text" value="#{newStudentBean.studentAdress}" required="false"/>
+                <h:message for="clientAdress"/>* gyvenamoji vieta </td>
+				</tr>
+=======
+               <td><h:inputText id="clientBirthday" value="#{newStudentBean.studentBirthday}" required="true"/>
+                <h:message for="clientBirthday"/>* privalomas laukas</td>
+				</tr>
+				 <tr>
+				<td><h:outputText value="Adresas:"/></td>
+                <td><h:inputText id="clientAdress" value="#{newStudentBean.studentAdress}" required="true"/>
+                <h:message for="clientAdress"/>* gyvenamoji vieta </td>
+				</tr>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 						
 				
 				<tr>
 				<td><h:outputText value="Savivaldybė:"/></td>
+<<<<<<< HEAD
 				<td>  <h:selectOneMenu id="clientLocation" value="#{newStudentBean.studentLocation}" required="false">
+=======
+<<<<<<< HEAD
+				<td>  <h:selectOneMenu id="clientLocation" value="#{newStudentBean.studentLocation}" required="false">
+=======
+				<td>  <h:selectOneMenu id="clientLocation" value="#{newStudentBean.studentLocation}" required="true">
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
                     <f:selectItem itemValue="--------------" itemLabel="--------------" />
                     <f:selectItem itemValue="Akmenės" itemLabel="Akmenės" />
                     <f:selectItem itemValue="Alytaus" itemLabel="Alytaus" />
@@ -102,7 +137,53 @@
 						
 			    <tr>
 				<td><h:outputText value="Telefonas:"/></td>
+<<<<<<< HEAD
                 <td><h:inputText id="clientPhone" value="#{newStudentBean.studentPhone}" required="false"/>
+=======
+<<<<<<< HEAD
+                <td><h:inputText id="clientPhone" value="#{newStudentBean.studentPhone}" required="false"/>
+=======
+<<<<<<< HEAD
+=======
+=======
+			
+			    <tr>
+				<td><h:outputText value="Location:"/></td>
+                <td><h:inputText id="clientLocation" value="#{newStudentBean.studentLocation}" required="true"/>
+                <h:message for="clientLocation"/> </td>
+<<<<<<< HEAD
+				
+				</tr>
+						
+=======
+<<<<<<< HEAD
+				
+				</tr>
+						
+=======
+<<<<<<< HEAD
+				
+				</tr>
+						
+=======
+<<<<<<< HEAD
+				
+				</tr>
+						
+=======
+				</tr>
+				
+>>>>>>> 1185e82019f8820520119a8a3e6e326901be0227
+>>>>>>> f499e96bd0070e8ecabf84d7f656c41af4e0c09a
+>>>>>>> 0a11dcb9064815d1f707d4abde2a258d2d8ead79
+>>>>>>> 42c18efbc6930cdc07ffd3061cc55d35468f39ef
+			    <tr>
+				<td><h:outputText value="Phone:"/></td>
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+                <td><h:inputText id="clientPhone" value="#{newStudentBean.studentPhone}" required="true"/>
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
                 <h:message for="clientPhone"/>namų/mobilus </td>
 				</tr>
 				
@@ -111,11 +192,26 @@
                 <td><h:inputText id="clientEmail" value="#{newStudentBean.studentEmail}"  required="false"/>
                 <h:message for="clientEmail"/> </td>
                     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
 				</tr>
 				
                <tr>
                <td><h:outputText value="Šeimyninė padėtis:"/></td>
+<<<<<<< HEAD
 			    <td> <h:selectOneMenu id="clientFamilyState" value="#{newStudentBean.studentFamilyState}" required="false">
+=======
+<<<<<<< HEAD
+			    <td> <h:selectOneMenu id="clientFamilyState" value="#{newStudentBean.studentFamilyState}" required="false">
+=======
+			    <td> <h:selectOneMenu id="clientFamilyState" value="#{newStudentBean.studentFamilyState}" required="true">
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
                     <f:selectItem itemValue="---------------" itemLabel="-------------"/>
                  	<f:selectItem itemValue="Vedęs/Ištekėjusi" itemLabel="Vedęs/Ištekėjusi"/>  
                     <f:selectItem itemValue="Nevedęs/Netekėjusi" itemLabel="Nevedęs/Netekėjusi"/>                    
@@ -127,6 +223,7 @@
             <h:commandButton action="#{newStudentBean.save()}" value="Išsaugoti"/>
             
      	
+<<<<<<< HEAD
       
           <h:form id="tableActionForm3">
            
@@ -196,6 +293,86 @@
            </h:form> 
         
               
+=======
+              
+<<<<<<< HEAD
+=======
+=======
+				</tr>
+				
+<<<<<<< HEAD
+               <tr>
+               <td><h:outputText value="Šeimyninė padėtis:"/></td>
+			    <td> <h:selectOneMenu id="clientFamilyState" value="#{newStudentBean.studentFamilyState}" required="true">
+                    <f:selectItem itemValue="---------------" itemLabel="-------------"/>
+                 	<f:selectItem itemValue="Vedęs/Ištekėjusi" itemLabel="Vedęs/Ištekėjusi"/>  
+                    <f:selectItem itemValue="Nevedęs/Netekėjusi" itemLabel="Nevedęs/Netekėjusi"/>                    
+                    <f:selectItem itemValue="Našlaitis" itemLabel="Našlaitis"/>
+                 </h:selectOneMenu></td></tr>
+                				
+=======
+				
+				
+               <tr>
+				<td><h:outputText value="Family State:"/></td>
+                <td><h:inputText id="clientFamilyState" value="#{newStudentBean.studentFamilyState}"  required="true"/>
+                <h:message for="clientFamilyState"/> </td>
+                    
+				</tr>
+               				
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
+				</table>
+				 			 
+            <h:commandButton action="#{newStudentBean.save()}" value="Add"/>
+            
+<<<<<<< HEAD
+     	  <br/>
+               <h:column>
+                    <f:facet name="header">
+                        Education
+                    </f:facet>
+                   <h:form id="educationForm">
+           			 <h:commandButton id="addStudentEducationBtn" action="addStudentEducation" value="Add Student Education"/>
+      			  </h:form>
+                </h:column>
+             <br/>
+                 <h:column>
+                    <f:facet name="header">
+                        Family
+                    </f:facet>
+                  <h:commandButton id="addFamilyBtn" action="addFamilyInfo" value="Add Family Info"/>
+         
+                 </h:column>
+        	<br/>   
+                 <h:column>
+                    <f:facet name="header">
+                        Additional Info
+                    </f:facet>
+                  <h:commandButton id="addAdditionalBtn" action="addAdditional" value="Add Additional Info"/>
+         
+                 </h:column>
+             <br/>             
+                <h:column>
+                    <f:facet name="header">
+                        Student Study Plan
+                    </f:facet>
+                  <h:commandButton id="addStudyPlanBtn" action="addStudyPlan" value="Add Study Plan"/>
+      
+                 </h:column>
+             <br/>    
+                   <h:column>
+                    <f:facet name="header">
+                        Student Study Plan Special
+                    </f:facet>
+                  <h:commandButton id="addStudyPlanPapildBtn" action="addPapildPlan" value="Add Study Plan Papild"/>
+      
+                 </h:column>        
+                        
+=======
+>>>>>>> 64521b49a6d5b9d17857d31512a30ef70c710707
+>>>>>>> 304b62ab939c2594413a624e1d50b2852d64a2a4
+>>>>>>> 7aa17709ddedcaad047f27d31a7764f456dc0740
+>>>>>>> 021d6bec3bd85b872daf143e539576d34408991b
             
         </h:form>
         
